@@ -1,6 +1,7 @@
 package physics;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
+import java.awt.geom.Area;
 /** All units in pixels/second^x
  */
 public abstract class PhysObj{
@@ -11,6 +12,8 @@ public abstract class PhysObj{
 	private double[] rAcc = new double[2];
 	private long lastTime, time;
 	private boolean velOnly, fill;
+	public Shape collideObj;
+
 	protected AffineTransform prev, trans;
 	public PhysObj(double[] pos, double[] vel, double[] acc,boolean velOnly) {
 		this.pos = pos.clone();
@@ -29,9 +32,12 @@ public abstract class PhysObj{
 		vel = vAdd(vel, sMultiply(acc, (time-lastTime)/1000d));
 		pos = vAdd(pos, sMultiply(vel, (time-lastTime)/1000d));
 		lastTime = time;
-	}
-	public void transform() {
 		trans.setToTranslation(pos[0], pos[1]);
+	}
+	public boolean intersects(PhysObj obj) {
+		   Area areaA = new Area(collideObj);
+		   areaA.intersect(new Area(obj.collideObj));
+		   return !areaA.isEmpty();
 	}
 	private double[] sMultiply(double[] x, double s) { // scalar multiply
 		double[] o = new double[x.length];

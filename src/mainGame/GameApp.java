@@ -17,7 +17,7 @@ public class GameApp extends JPanel{
 	public GameApp() {
 		setBackground(Color.black); 
 		setPreferredSize(new Dimension(800,600));
-		ego = new PhysImg
+		ego = new PhysImg(new double[] {400, 500}, new ImageIcon(), false);
 	}
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
