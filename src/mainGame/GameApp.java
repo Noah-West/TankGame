@@ -8,19 +8,25 @@ import physics.*;
 
 
 public class GameApp extends JPanel{
-	private PhysImg ego;
+	private PhysImg egoBod, egoTurret;
 	private ArrayList<PhysImg> enemies = new ArrayList<PhysImg>();
 	private ArrayList<PhysImg> shots = new ArrayList<PhysImg>();
 	
 	
 	
 	public GameApp() {
-		setBackground(Color.black); 
+		setBackground(Color.blue); 
 		setPreferredSize(new Dimension(800,600));
-		ego = new PhysImg(new double[] {400, 500}, new ImageIcon(), false);
+		egoBod = new PhysImg(new double[] {400, 500}, new ImageIcon("Resource/TankBody.png"), false);
+		ImageIcon turr = new ImageIcon("Resource/TankTurret.png");
+		egoTurret = new PhysImg(new double[] {400, 500}, new int[] {turr.getIconWidth()/2, turr.getIconWidth()/2}, turr, false);
+
 	}
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
+		Graphics2D g2d = (Graphics2D)g;
+		egoBod.draw(g2d);
+		egoTurret.draw(g2d);
 		
 	}
 	public static void main(String[] args) {

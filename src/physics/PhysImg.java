@@ -20,7 +20,6 @@ public class PhysImg extends PhysObj{
 	}
 	public void draw(Graphics2D g2d) {
 		prev = g2d.getTransform();
-		super.transform();
 		g2d.transform(trans);
 		g2d.setColor(col);
 		img.paintIcon(null, g2d, -offset[0], -offset[1]);

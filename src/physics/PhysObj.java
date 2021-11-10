@@ -21,6 +21,8 @@ public abstract class PhysObj{
 		this.acc = acc.clone();
 		this.velOnly = velOnly;
 		this.trans = new AffineTransform();
+		trans.setToTranslation(pos[0], pos[1]);
+
 	}
 	public abstract void draw(Graphics2D g2d);
 	public void start() {
