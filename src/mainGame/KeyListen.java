@@ -15,9 +15,12 @@ public class KeyListen implements KeyListener{
 	public void keyPressed(KeyEvent e) {
 		keyPress = true;
 		if(e.getKeyCode()<100)keys[e.getKeyCode()]=true;
+		System.out.println("keypress "+e.getKeyCode());
 	}
 	public void keyReleased(KeyEvent e) {
 		if(e.getKeyCode()<100)keys[e.getKeyCode()]=false;
+		System.out.println("keyrelease "+e.getKeyCode());
+
 	}
 	public void keyTyped(KeyEvent e) {
 	}

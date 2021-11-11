@@ -11,6 +11,7 @@ public abstract class PhysObj{
 	private double[] rPos = new double[2];
 	private double[] rVel = new double[2];
 	private double[] rAcc = new double[2];
+	private double maxV;
 	private long lastTime, time;
 	private boolean velOnly, fill;
 	public Shape collideObj;
@@ -24,14 +25,16 @@ public abstract class PhysObj{
 		this.trans = new AffineTransform();
 		trans.setToTranslation(pos[0], pos[1]);
 	}
-	public abstract void draw(Graphics2D g2d);
 	public void start() {
 		lastTime = System.currentTimeMillis();
 	}
+	public abstract void draw(Graphics2D g2d);
 	public void update() {tStep();}
 	public void tStep() {
 		time = System.currentTimeMillis();
 		vel = vAdd(vel, sMultiply(acc, (time-lastTime)/1000d));
+		vel[0]=Math.abs(vel[0])>=maxV?(vel[0]>0?maxV:-maxV):vel[0]; //bound
+		vel[1]=Math.abs(vel[1])>=maxV?(vel[1]>0?maxV:-maxV):vel[1];
 		pos = vAdd(pos, sMultiply(vel, (time-lastTime)/1000d));
 		lastTime = time;
 		trans.setToTranslation(pos[0], pos[1]);
@@ -41,12 +44,12 @@ public abstract class PhysObj{
 		   areaA.intersect(new Area(obj.collideObj));
 		   return !areaA.isEmpty();
 	}
-	private double[] sMultiply(double[] x, double s) { // scalar multiply
+	public static double[] sMultiply(double[] x, double s) { // scalar multiply
 		double[] o = new double[x.length];
 		for(int i = 0;i<x.length;i++) o[i] = x[i]*s;
 		return o;
 	}
-	private double[] vAdd(double[] x, double[] y) {
+	private static double[] vAdd(double[] x, double[] y) {
 		if(x.length != y.length) throw new IllegalArgumentException("Cannot add arrays of differnt length");
 		double[] out = new double[x.length];
 		for(int i = 0; i < x.length; i++) {
@@ -54,7 +57,7 @@ public abstract class PhysObj{
 		}
 		return out;
 	}
-	private int[] vAdd(int[] x, double[] y) {
+	private static int[] vAdd(int[] x, double[] y) {
 		if(x.length != y.length) throw new IllegalArgumentException("Cannot add arrays of differnt length");
 		int[] out = new int[x.length];
 		for(int i = 0; i < x.length; i++) {
@@ -64,8 +67,14 @@ public abstract class PhysObj{
 	}
 	public static double[] toXY(double mag, double rad){
 		double[] out = new double[2];
-		out[0] = mag*Math.sin(rad);
-		out[1] = mag*Math.cos(rad);
+		out[0] = mag*Math.cos(rad);
+		out[1] = mag*Math.sin(rad);
+		return out;
+	}
+	public static double[] toMagRad(double[] in){
+		double[] out = new double[2];
+		out[0] = Math.sqrt(in[0]*in[0]+in[1]*in[1]);
+		out[1] = Math.atan(in[1]/in[0]);
 		return out;
 	}
 	public void setPos(double[] in) {
@@ -88,6 +97,9 @@ public abstract class PhysObj{
 	}
 	public void setAcc(double x, double y) {
 		setAcc(new double[] {x, y});
+	}
+	public void setMaxVel(double vel) {
+		maxV = Math.abs(vel);
 	}
 	/**
 	 * @return the pos

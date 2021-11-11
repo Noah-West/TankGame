@@ -12,7 +12,7 @@ import physics.*;
 
 public class GameApp extends JPanel{
 	private final long invFps = 1000/60;
-	private final int egoAcc = 10;
+	private final int egoAcc = 200;
 	private int lives, score;
 	static protected KeyListen keyb = new KeyListen();
 	
@@ -27,10 +27,11 @@ public class GameApp extends JPanel{
 		addKeyListener(keyb);
 		setFocusable(true);
 		egoBod = new PhysImg(new double[] {400, 500}, new ImageIcon("Resource/TankBody.png"), false);
-		egoBod.collideObj = new Rectangle(egoBod.img.getIconWidth()/2, img.getIconHeight()/2);
+		egoBod.collideObj = egoBod.getBounds(false);
 		ImageIcon turr = new ImageIcon("Resource/TankTurret.png");
 		egoTurret = new PhysImg(new double[] {400, 500}, new int[] {turr.getIconWidth()/2, turr.getIconWidth()/2}, turr, false);
-
+		egoBod.setMaxVel(300);
+		egoTurret.setMaxVel(300);
 	}
 	public void play() {
 		long loopTime;
@@ -41,17 +42,23 @@ public class GameApp extends JPanel{
 		lastFire = System.currentTimeMillis();
 		egoBod.start();
 		egoTurret.start();
+		egoBod.setVel(10,0);
+		egoTurret.setVel(10,0);
 		for(PhysObj o:enemies) o.start();
 		while(true) {
 			loopTime = System.currentTimeMillis()+invFps;
 			
 			if(lives<=0)return;
 		//key handling
-			double[] acc = new double[2];
-			if(keyb.keys[KeyEvent.VK_LEFT]&&egoBod.collideObj.intersects(-1,0, 0, 600)) acc[0] = -egoAcc;
-			if(keyb.keys[KeyEvent.VK_RIGHT]&&egoBod.collideObj.intersects(800,0, 801, 600)) acc[0] += egoAcc;
-			if(keyb.keys[KeyEvent.VK_UP]&&egoBod.collideObj.intersects(0,-1, 800, 0)) acc[1] = -egoAcc;
-			if(keyb.keys[KeyEvent.VK_DOWN]&&egoBod.collideObj.intersects(0,600, 800, 601)) acc[1] += egoAcc;
+			//double[] acc = PhysObj.toMagRad(egoBod.v());
+			//acc=PhysObj.toXY(acc[0]*-.5, acc[1]);
+			if(keyb.keys[KeyEvent.VK_LEFT]) acc[0] = -egoAcc;
+			if(keyb.keys[KeyEvent.VK_RIGHT]) acc[0] += egoAcc;
+			if(keyb.keys[KeyEvent.VK_UP]) acc[1] = -egoAcc;
+			if(keyb.keys[KeyEvent.VK_DOWN]) acc[1] += egoAcc;
+
+			egoBod.setAcc(acc);
+			egoTurret.setAcc(acc);
 			if(keyb.keys[KeyEvent.VK_Q]) return;
 			if(keyb.keys[KeyEvent.VK_SPACE]) {
 				if(System.currentTimeMillis()>lastFire+fireDel) {

@@ -29,6 +29,6 @@ public class PhysImg extends PhysObj{
 		int hw, hh;
 		hw = img.getIconWidth()/2;
 		hh = img.getIconHeight()/2;
-		return new Rectangle(-hw, -hh, hw, hh);
+		return transform?new Rectangle(-hw, -hh, hw, hh):new Rectangle((int)pos[0]-hw,(int)pos[1]-hh,(int)pos[0]+hw,(int)pos[1]+hh);
 	}
 }
