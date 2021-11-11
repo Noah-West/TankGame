@@ -25,4 +25,10 @@ public class PhysImg extends PhysObj{
 		img.paintIcon(null, g2d, -offset[0], -offset[1]);
 		g2d.setTransform(prev);
 	}
+	public Rectangle getBounds(boolean transform) {
+		int hw, hh;
+		hw = img.getIconWidth()/2;
+		hh = img.getIconHeight()/2;
+		return new Rectangle(-hw, -hh, hw, hh);
+	}
 }

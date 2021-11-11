@@ -8,6 +8,7 @@ public abstract class PhysObj{
 	public  double[] pos = new double[2];
 	private double[] vel = new double[2];
 	private double[] acc = new double[2];
+	private double[] rPos = new double[2];
 	private double[] rVel = new double[2];
 	private double[] rAcc = new double[2];
 	private long lastTime, time;
@@ -15,14 +16,13 @@ public abstract class PhysObj{
 	public Shape collideObj;
 
 	protected AffineTransform prev, trans;
-	public PhysObj(double[] pos, double[] vel, double[] acc,boolean velOnly) {
+	public PhysObj(double[] pos, double[] vel, double[] acc, boolean velOnly) {
 		this.pos = pos.clone();
 		this.vel = vel.clone();
 		this.acc = acc.clone();
 		this.velOnly = velOnly;
 		this.trans = new AffineTransform();
 		trans.setToTranslation(pos[0], pos[1]);
-
 	}
 	public abstract void draw(Graphics2D g2d);
 	public void start() {
@@ -93,31 +93,38 @@ public abstract class PhysObj{
 	 * @return the pos
 	 */
 	public double[] p() {
-		return pos;
+		return pos.clone();
 	}
 	/**
 	 * @return the vel
 	 */
 	public double[] v() {
-		return vel;
+		return vel.clone();
 	}
 	/**
 	 * @return the acc
 	 */
 	public double[] a() {
-		return acc;
+		return acc.clone();
 	}
 	/**
 	 * @return the rVel
 	 */
+	public double[] rP() {
+		return rPos.clone();
+	}
+
+	/**
+	 * @return the rVel
+	 */
 	public double[] rV() {
-		return rVel;
+		return rVel.clone();
 	}
 	/**
 	 * @return the rAcc
 	 */
 	public double[] rA() {
-		return rAcc;
+		return rAcc.clone();
 	}
 	/**
 	 * @return the velOnly
