@@ -3,6 +3,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class KeyListen implements KeyListener{
+	private final boolean DEBUG = false;
 	public boolean[] keys = new boolean[100];
 	private volatile boolean keyPress;
 	public KeyListen() {
@@ -10,16 +11,16 @@ public class KeyListen implements KeyListener{
 	public void waitForKey() {
 		keyPress = false;
 		while(keyPress == false);
-		System.out.println("end waitkey");
+		if(DEBUG)System.out.println("end waitkey");
 	}
 	public void keyPressed(KeyEvent e) {
 		keyPress = true;
 		if(e.getKeyCode()<100)keys[e.getKeyCode()]=true;
-		System.out.println("keypress "+e.getKeyCode());
+		if(DEBUG)System.out.println("keypress "+e.getKeyCode());
 	}
 	public void keyReleased(KeyEvent e) {
 		if(e.getKeyCode()<100)keys[e.getKeyCode()]=false;
-		System.out.println("keyrelease "+e.getKeyCode());
+		if(DEBUG)System.out.println("keyrelease "+e.getKeyCode());
 
 	}
 	public void keyTyped(KeyEvent e) {

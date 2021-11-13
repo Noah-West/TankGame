@@ -6,32 +6,25 @@ import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Random;
 import java.awt.geom.Area;
-
-import physics.*;
-
-
 public class GameApp extends JPanel{
 	private final long invFps = 1000/60;
-	private final int egoAcc = 200;
+	private final double rotRate = (Math.PI/30)/3;
 	private int lives, score;
 	static protected KeyListen keyb = new KeyListen();
 	
-	private PhysImg egoBod, egoTurret;
-	private ArrayList<PhysImg> enemies = new ArrayList<PhysImg>();
-	private ArrayList<PhysImg> shots = new ArrayList<PhysImg>();
-	private long fireDel;
+	private Tank player;
+	//private ArrayList<PhysImg> enemies = new ArrayList<PhysImg>();
+	private ArrayList<Bullet> shots = new ArrayList<Bullet>();
+	private long fireDel = 1000;
 	
 	public GameApp() {
-		setBackground(Color.blue); 
+		setBackground(new Color(0x33421f)); 
 		setPreferredSize(new Dimension(800,600));
 		addKeyListener(keyb);
 		setFocusable(true);
-		egoBod = new PhysImg(new double[] {400, 500}, new ImageIcon("Resource/TankBody.png"), false);
-		egoBod.collideObj = egoBod.getBounds(false);
-		ImageIcon turr = new ImageIcon("Resource/TankTurret.png");
-		egoTurret = new PhysImg(new double[] {400, 500}, new int[] {turr.getIconWidth()/2, turr.getIconWidth()/2}, turr, false);
-		egoBod.setMaxVel(300);
-		egoTurret.setMaxVel(300);
+		
+		player = new Tank(400, 500, 0, 0, false);
+		
 	}
 	public void play() {
 		long loopTime;
@@ -40,29 +33,24 @@ public class GameApp extends JPanel{
 		lives = 5; score = 0;
 		Random rnd = new Random();
 		lastFire = System.currentTimeMillis();
-		egoBod.start();
-		egoTurret.start();
-		egoBod.setVel(10,0);
-		egoTurret.setVel(10,0);
-		for(PhysObj o:enemies) o.start();
+		player.start();
+		//for(PhysObj o:enemies) o.start();
 		while(true) {
 			loopTime = System.currentTimeMillis()+invFps;
 			
 			if(lives<=0)return;
 		//key handling
-			//double[] acc = PhysObj.toMagRad(egoBod.v());
-			//acc=PhysObj.toXY(acc[0]*-.5, acc[1]);
-			if(keyb.keys[KeyEvent.VK_LEFT]) acc[0] = -egoAcc;
-			if(keyb.keys[KeyEvent.VK_RIGHT]) acc[0] += egoAcc;
-			if(keyb.keys[KeyEvent.VK_UP]) acc[1] = -egoAcc;
-			if(keyb.keys[KeyEvent.VK_DOWN]) acc[1] += egoAcc;
+			if(keyb.keys[KeyEvent.VK_LEFT]) player.rotate(-rotRate);
+			if(keyb.keys[KeyEvent.VK_RIGHT]) player.rotate(rotRate);
+			if(keyb.keys[KeyEvent.VK_UP]) player.acc(true);
+			if(keyb.keys[KeyEvent.VK_DOWN]) player.acc(false);
+			if(keyb.keys[KeyEvent.VK_Z]) player.rotTurret(-rotRate);
+			if(keyb.keys[KeyEvent.VK_X]) player.rotTurret(rotRate);
 
-			egoBod.setAcc(acc);
-			egoTurret.setAcc(acc);
 			if(keyb.keys[KeyEvent.VK_Q]) return;
 			if(keyb.keys[KeyEvent.VK_SPACE]) {
 				if(System.currentTimeMillis()>lastFire+fireDel) {
-					
+					shots.add(player.fire());
 					lastFire = System.currentTimeMillis();
 				}
 			}
@@ -85,10 +73,18 @@ public class GameApp extends JPanel{
 		}
 	}
 	public void updatePhysics() {
-		PhysImg s, t;
-		egoBod.update();
-		egoTurret.update();
-		for(int i = 0; i < shots.size(); i++) {
+		player.tStep();
+		long t = System.currentTimeMillis();
+		Bullet b;
+		for(int i = 0; i < shots.size();i++) {
+			b = shots.get(i);
+			b.tStep();
+			if(t>b.endTime()) {
+				shots.remove(i);
+				b = null;
+			}
+		}
+		/*for(int i = 0; i < shots.size(); i++) {
 			s = shots.get(i);
 			s.update();
 			if(!inBounds(s.collideObj))shots.remove(s);
@@ -112,7 +108,7 @@ public class GameApp extends JPanel{
 				lives --;
 			}
 		}
-		
+		*/
 	}
 	private boolean inBounds(Shape obj) {
 		Area o = new Area(obj);
@@ -123,8 +119,8 @@ public class GameApp extends JPanel{
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2d = (Graphics2D)g;
-		egoBod.draw(g2d);
-		egoTurret.draw(g2d);
+		player.draw(g2d);
+		for(Bullet b:shots) b.draw(g2d);
 		
 	}
 	public static void main(String[] args) {
