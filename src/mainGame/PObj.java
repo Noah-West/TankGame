@@ -23,6 +23,9 @@ public class PObj {
 		if(start)start();
 	}
 	public void start() {
+		trans.setToTranslation(pos[0], pos[1]);
+		trans.scale(scale, scale);
+		trans.rotate(rPos);
 		lastTime = System.currentTimeMillis();
 	}
 	public void tStep() {

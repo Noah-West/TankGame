@@ -11,18 +11,19 @@ public class GameApp extends JPanel{
 	private final double rotRate = (Math.PI/30)/3;
 	private int lives, score;
 	static protected KeyListen keyb = new KeyListen();
-	
+	private Area screenBounds;
 	private Tank player;
+	private boolean inBounds = true;
 	//private ArrayList<PhysImg> enemies = new ArrayList<PhysImg>();
 	private ArrayList<Bullet> shots = new ArrayList<Bullet>();
-	private long fireDel = 1000;
+	private long fireDel = 200;
 	
 	public GameApp() {
 		setBackground(new Color(0x33421f)); 
 		setPreferredSize(new Dimension(800,600));
 		addKeyListener(keyb);
 		setFocusable(true);
-		
+		screenBounds = new Area(new Rectangle(0,0,800,600));
 		player = new Tank(400, 500, 0, 0, false);
 		
 	}
@@ -74,6 +75,15 @@ public class GameApp extends JPanel{
 	}
 	public void updatePhysics() {
 		player.tStep();
+	//keeping player on screen
+		Rectangle box = player.rectBounds();
+		double[] pos = player.pos();
+		if(box.getX()<0)pos[0] += 10;
+		else if(box.getX()+box.getWidth()>800)pos[0] -= 10;
+		if(box.getY()<0)pos[1] += 10;
+		else if(box.getY()+box.getHeight()>600)pos[1] -= 10;
+		player.pos(pos);
+	//stepping/deleting shots
 		long t = System.currentTimeMillis();
 		Bullet b;
 		for(int i = 0; i < shots.size();i++) {
@@ -84,31 +94,7 @@ public class GameApp extends JPanel{
 				b = null;
 			}
 		}
-		/*for(int i = 0; i < shots.size(); i++) {
-			s = shots.get(i);
-			s.update();
-			if(!inBounds(s.collideObj))shots.remove(s);
-		}
-		for(int i = 0; i < enemies.size(); i++) {
-			t = enemies.get(i);
-			t.update();
-			for(int j = 0; j<shots.size(); j++) {
-				s = shots.get(j);
-				if(s.pos[0]+s.offset[0]>t.pos[0]-t.offset[0]&&s.pos[0]-s.offset[0]<t.pos[0]+t.offset[0]&&s.pos[1]-s.offset[1]<t.pos[1]+t.offset[1]) {
-					shots.remove(j);
-					enemies.remove(i);
-					t=null;
-					score += 10;
-					break;
-				}
-			}
-			if(t==null)continue;
-			if(t.pos[1]>550) {
-				enemies.remove(t);
-				lives --;
-			}
-		}
-		*/
+		
 	}
 	private boolean inBounds(Shape obj) {
 		Area o = new Area(obj);
