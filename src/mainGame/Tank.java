@@ -7,16 +7,20 @@ import java.awt.Color;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Area;
 import java.awt.geom.Point2D;
-public class Tank{// implements Drawable{
+public class Tank implements Shooter{
 	private AffineTransform prev;
 	private Area bounds, tranBounds;
 	private PObj pBody, pTurret;
-	private final double maxVel = 120;
+	private final double maxVel = 100;
 	private final double accConst = 3;
+	private long fireDel = 500;
 	double[] pos, vel; // vel in form [mag, rad]
 	static ImageIcon iBody = new ImageIcon("Resource/TankBody.png");
 	static ImageIcon iTurret = new ImageIcon("Resource/TankTurret.png");
-	public Tank(double x, double y, double mag, double rad, boolean start) {
+	private int health;
+	private long lastFire;
+	public Tank(double x, double y, double mag, double rad, int health, boolean start) {
+		this.health = health;
 		pos = new double[] {x, y};
 		vel = new double[] {mag, rad};
 		pBody = new PObj(pos, vel, start);
@@ -27,9 +31,16 @@ public class Tank{// implements Drawable{
 		pTurret.scale(.6);
 		bounds = new Area(new Rectangle(-41, -36, 82, 72));
 		tranBounds = bounds;
+		lastFire = System.currentTimeMillis();
+
 	}
+
 	public Bullet fire() {
-		return new Bullet(pTurret.pos()[0]+25*Math.cos(pTurret.rPos()),pTurret.pos()[1]+25*Math.sin(pTurret.rPos()), pTurret.rPos(), 2, true);
+		if(System.currentTimeMillis()>lastFire+fireDel) {
+			lastFire = System.currentTimeMillis();
+			return new Bullet(pTurret.pos()[0]+25*Math.cos(pTurret.rPos()),pTurret.pos()[1]+25*Math.sin(pTurret.rPos()), pTurret.rPos(), 2, true);
+		}
+		return null;
 	}
 	public void rotate(double rad) {
 		vel[1] += rad;
@@ -52,14 +63,20 @@ public class Tank{// implements Drawable{
 	}
 	public void draw(Graphics2D g2d) {
 		prev = g2d.getTransform();
+		g2d.setColor(gCols.health);
+		g2d.fillRect((int)pos[0]-health/4,(int)pos[1]-45,health/2,5);
+		g2d.setColor(gCols.reload);
+		g2d.fillRect((int)pos[0]-26, (int)pos[1]-37, (int)Math.min((System.currentTimeMillis()-lastFire)/10,50), 5);
+		//g2d.drawString(String.format("%.3f",vel[1]), 0, 50);
+		//g2d.draw(tranBounds);
 		g2d.transform(pBody.trans());
 		iBody.paintIcon(null, g2d, -41, -36);
-		g2d.setColor(Color.red);
-		//g2d.drawString(String.format("%.3f",vel[1]), 0, 50);
 		g2d.setTransform(pTurret.trans());
 		iTurret.paintIcon(null, g2d, -23,-20);
 		g2d.setTransform(prev);
-		//g2d.draw(tranBounds);
+	}
+	public void takeDamage(int damage) {
+		
 	}
 	public void tStep() {
 		addVel(vel[0]>0?-2*accConst:(vel[0]<0?2*accConst:0));

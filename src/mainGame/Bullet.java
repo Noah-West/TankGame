@@ -9,8 +9,9 @@ import javax.swing.ImageIcon;
 public class Bullet {
 	//lookup tables for bullet types		Infantry, Machine Gun, Tank		
 	private final static int[] speed 	= new int[] {700, 500, 300};
-	private final static int[] time 	= new int[] {1000, 2000, 1000};
-	private final static double[] scale = new double[] {.1, .2, .3};
+	private final static int[] time 	= new int[] {1000, 1500, 2000};
+	private final static double[] scale = new double[] {.1, .2, .4};
+	private final static int[] damage 	= new int[] {1, 3, 10};
 	
 	static ImageIcon Ibody = new ImageIcon("Resource/Bullet.png");
 	private AffineTransform prev;
@@ -39,14 +40,17 @@ public class Bullet {
 		p.trans().transform(tip, tip);
 		return tip;
 	}
+	public int damage() {
+		return damage[type];
+	}
 	public long endTime() {
 		return endTime;
-	}
-	public void tStep() {
-		p.tStep();
 	}
 	public void start() {
 		endTime = System.currentTimeMillis()+time[type];
 		p.start();
+	}
+	public void tStep() {
+		p.tStep();
 	}
 }

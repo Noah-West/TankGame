@@ -14,17 +14,16 @@ public class GameApp extends JPanel{
 	private Area screenBounds;
 	private Tank player;
 	private boolean inBounds = true;
-	//private ArrayList<PhysImg> enemies = new ArrayList<PhysImg>();
+	private ArrayList<Shooter> shooters = new ArrayList<Shooter>();
 	private ArrayList<Bullet> shots = new ArrayList<Bullet>();
-	private long fireDel = 200;
 	
 	public GameApp() {
-		setBackground(new Color(0x33421f)); 
+		setBackground(gCols.bg); 
 		setPreferredSize(new Dimension(800,600));
 		addKeyListener(keyb);
 		setFocusable(true);
 		screenBounds = new Area(new Rectangle(0,0,800,600));
-		player = new Tank(400, 500, 0, 0, false);
+		player = new Tank(400, 500, 0, 0, 100, false);
 		
 	}
 	public void play() {
@@ -33,7 +32,6 @@ public class GameApp extends JPanel{
 	//game setup
 		lives = 5; score = 0;
 		Random rnd = new Random();
-		lastFire = System.currentTimeMillis();
 		player.start();
 		//for(PhysObj o:enemies) o.start();
 		while(true) {
@@ -50,24 +48,9 @@ public class GameApp extends JPanel{
 
 			if(keyb.keys[KeyEvent.VK_Q]) return;
 			if(keyb.keys[KeyEvent.VK_SPACE]) {
-				if(System.currentTimeMillis()>lastFire+fireDel) {
-					shots.add(player.fire());
-					lastFire = System.currentTimeMillis();
-				}
+				Bullet shot = player.fire();
+				if(shot!= null)shots.add(shot);
 			}
-			/*if(targs.size()<(score/50+1)&&System.currentTimeMillis()>nextTargTime) {
-				PhysImg t = new PhysImg(new double[] {rnd.nextInt(450)+50, 70}, enemyS, false);
-				if(t.pos[0]-t.offset[0]<50)t.pos[0]= 50+t.offset[0];
-				if(t.pos[0]+t.offset[0]>500)t.pos[0]=500-t.offset[0];
-				t.setVel(0, 100);
-				targs.add(t);
-				targDel = Math.max(targDel-10, 500);
-				vShip = Math.min(vShip+10, 300);
-				fireDel = Math.max(fireDel-3, 100);
-				nextTargTime = System.currentTimeMillis()+targDel;
-				t.start();
-				System.out.println(targs.size());
-			}*/
 			updatePhysics();
 			repaint();
 			while(System.currentTimeMillis()<loopTime);
@@ -92,6 +75,18 @@ public class GameApp extends JPanel{
 			if(t>b.endTime()) {
 				shots.remove(i);
 				b = null;
+			}
+		}
+	//handling hits
+		for(Shooter s:shooters) {
+			Area collide = s.tightBounds();
+			for(int i = 0; i < shots.size();i++) {
+				Bullet shot = shots.get(i);
+				if(collide.contains(shot.tip())) {
+					s.takeDamage(shot.damage());
+					shots.remove(i);
+					shot = null;
+				}
 			}
 		}
 		
