@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="1000"
+   viewBox="0 0 264.58333 264.58335"
+   version="1.1"
+   id="svg926"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="sprites.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview928"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox="true"
+     inkscape:zoom="4"
+     inkscape:cx="265.375"
+     inkscape:cy="137"
+     inkscape:window-width="1280"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3"
+     inkscape:object-nodes="false"
+     inkscape:object-paths="true"
+     inkscape:snap-others="true"
+     inkscape:snap-global="false" />
+  <defs
+     id="defs923" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="BackGround"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <rect
+       style="fill:#33421f;fill-opacity:1;stroke:#000000;stroke-width:0.186603;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3218"
+       width="263.04529"
+       height="263.23236"
+       x="0.15568689"
+       y="0.98153621"
+       ry="0.033143409" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <g
+       id="g75327"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eJeep.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.0264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2791"
+         width="1.127636"
+         height="3.3027301"
+         x="-25.952465"
+         y="39.152588"
+         ry="0.31386879"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.0264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect3291"
+         width="1.127636"
+         height="3.3027301"
+         x="-25.952522"
+         y="30.526093"
+         ry="0.31386879"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#9b4834;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect19994"
+         width="2.0216188"
+         height="4.8820176"
+         x="-25.408691"
+         y="29.682434"
+         ry="0.20132034"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#9b4834;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect18186"
+         width="2.0155516"
+         height="6.0174642"
+         x="-25.304192"
+         y="37.244827"
+         ry="0.24814285"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.0264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20592"
+         width="1.127636"
+         height="3.3027301"
+         x="13.09809"
+         y="30.526093"
+         ry="0.31386879"
+         transform="matrix(0,1,1,0,0,0)" />
+      <rect
+         style="fill:#9b4834;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect20594"
+         width="2.0216188"
+         height="4.8820176"
+         x="13.641921"
+         y="29.682434"
+         ry="0.20132034"
+         transform="matrix(0,1,1,0,0,0)" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.0264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20590"
+         width="1.127636"
+         height="3.3027301"
+         x="13.098147"
+         y="39.152588"
+         ry="0.31386879"
+         transform="matrix(0,1,1,0,0,0)" />
+      <rect
+         style="fill:#9b4834;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect20596"
+         width="2.0155516"
+         height="6.0174642"
+         x="13.746425"
+         y="37.244827"
+         ry="0.24814285"
+         transform="matrix(0,1,1,0,0,0)" />
+      <rect
+         style="fill:#9b4834;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect958"
+         width="10.876509"
+         height="9.4817219"
+         x="-24.963562"
+         y="29.06131"
+         ry="0.39099884"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#545454;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect2848"
+         width="3.1417296"
+         height="3.1256077"
+         x="-23.63353"
+         y="33.823181"
+         ry="0.49191469"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#3a3a3a;fill-opacity:0.654696;stroke:#000000;stroke-width:0.167745;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect7352"
+         width="9.6024771"
+         height="3.5858557"
+         x="-24.313545"
+         y="29.576567"
+         ry="0.30350751"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#744136;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect7538"
+         width="8.8609591"
+         height="5.1428428"
+         x="-23.915909"
+         y="38.142899"
+         ry="0.40687177"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect18230"
+         width="9.5986595"
+         height="0.2869049"
+         x="-24.366596"
+         y="-43.429199"
+         ry="0.046114892"
+         transform="matrix(0,-1,-1,0,0,0)" />
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.0264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect18400"
+         width="1.127636"
+         height="3.3027301"
+         x="28.193085"
+         y="17.699335"
+         ry="0.31386879" />
+      <rect
+         style="fill:#545454;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect20600"
+         width="3.1417296"
+         height="3.1256077"
+         x="15.417089"
+         y="33.823181"
+         ry="0.49191469"
+         transform="matrix(0,1,1,0,0,0)" />
+      <rect
+         style="fill:#272727;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect19336"
+         width="0.38050467"
+         height="1.3698168"
+         x="-17.273731"
+         y="36.547775"
+         ry="0.19025233"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#888c96;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect2844"
+         width="9.4690123"
+         height="1.0426513"
+         x="-24.243572"
+         y="37.474144"
+         ry="0.27476907"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#272727;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect19338"
+         width="1.7756886"
+         height="0.55807358"
+         x="-17.984011"
+         y="36.192642"
+         ry="0.19025238"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect19810"
+         width="2.7076523"
+         height="0.99194312"
+         x="-23.416489"
+         y="33.558243"
+         ry="0.15611407"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#808080;fill-opacity:1;stroke:#000000;stroke-width:0.185208;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect20602"
+         width="2.7076523"
+         height="0.99194312"
+         x="15.634128"
+         y="33.558243"
+         ry="0.15611407"
+         transform="matrix(0,1,1,0,0,0)" />
+      <rect
+         style="fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.116245;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20708"
+         width="0.4734666"
+         height="3.9172497"
+         x="-22.324705"
+         y="38.313232"
+         ry="0.11635394"
+         transform="rotate(-90)" />
+      <rect
+         style="fill:#4e5061;fill-opacity:1;stroke:#000000;stroke-width:0.184183;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect20706"
+         width="1.4339902"
+         height="2.144455"
+         x="-22.813141"
+         y="36.778343"
+         ry="0.2423832"
+         transform="rotate(-90)" />
+    </g>
+    <g
+       id="g75303"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankBody.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="display:inline;fill:#937500;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect223-9"
+         width="4.8482971"
+         height="21.776928"
+         x="-78.498741"
+         y="29.743488"
+         ry="1.0635411"
+         transform="rotate(-90)" />
+      <rect
+         style="display:inline;fill:#937500;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect223-7-2"
+         width="4.8482971"
+         height="21.776934"
+         x="-64.143745"
+         y="29.743488"
+         ry="1.0985382"
+         transform="rotate(-90)" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 31.317366,78.548226 v -4.93693"
+         id="path3288-9" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 33.376422,78.541896 v -4.92456"
+         id="path3392-9" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 35.435479,78.541746 v -4.92456"
+         id="path3396-2" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 37.494535,78.541596 v -4.92455"
+         id="path3400-1" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 39.553591,78.541446 v -4.92455"
+         id="path3404-2" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 41.612648,78.541306 v -4.92456"
+         id="path3408-4" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 43.671704,78.541156 v -4.92456"
+         id="path3412-5" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45.730761,78.547186 v -4.92455"
+         id="path3416-0" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 47.789817,78.547046 v -4.92456"
+         id="path3420-4" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 49.848874,78.553076 v -4.92455"
+         id="path3424-5" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 31.347061,64.18865 V 59.251721"
+         id="path3879-6" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 33.406118,64.182315 V 59.257758"
+         id="path3881-1" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 35.465174,64.182166 V 59.25761"
+         id="path3883-5" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 37.524231,64.182018 V 59.257462"
+         id="path3885-7" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 39.583287,64.18187 V 59.257313"
+         id="path3887-1" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 41.642344,64.181721 V 59.257165"
+         id="path3889-1" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 43.7014,64.181572 V 59.257016"
+         id="path3891-3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 45.760457,64.187611 V 59.263054"
+         id="path3893-1" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 47.819513,64.187462 V 59.262906"
+         id="path3895-2" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 49.878569,64.1935 V 59.268944"
+         id="path3897-7" />
+      <rect
+         style="display:inline;fill:#3477bd;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect315-8"
+         width="13.633473"
+         height="17.826706"
+         x="-75.763321"
+         y="31.669106"
+         transform="rotate(-90)" />
+      <rect
+         style="display:inline;fill:#ffffff;fill-opacity:0.183007;stroke:#000000;stroke-width:0.47625;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect35303-7"
+         width="13.597801"
+         height="3.2050579"
+         x="-75.73719"
+         y="46.281212"
+         ry="0.014793055"
+         transform="rotate(-90)" />
+      <rect
+         style="display:inline;fill:#00285b;fill-opacity:0.582873;fill-rule:nonzero;stroke:#000000;stroke-width:0.385675;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect43951-8"
+         width="13.729293"
+         height="1.4044406"
+         x="-75.80294"
+         y="31.613689"
+         ry="0.0064822431"
+         transform="rotate(-90)" />
+    </g>
+    <g
+       id="g75276"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="display:inline;fill:#937500;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect223-9-1"
+         width="4.8482971"
+         height="21.776928"
+         x="-53.099758"
+         y="29.776613"
+         ry="1.0635411"
+         transform="rotate(-90)" />
+      <rect
+         style="display:inline;fill:#937500;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect223-7-2-2"
+         width="4.8482971"
+         height="21.776934"
+         x="-38.744762"
+         y="29.776613"
+         ry="1.0985382"
+         transform="rotate(-90)" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 31.350491,53.149248 v -4.93693"
+         id="path3288-9-3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 33.409547,53.142918 v -4.92456"
+         id="path3392-9-1" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 35.468604,53.142768 v -4.92456"
+         id="path3396-2-4" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 37.52766,53.142618 v -4.92455"
+         id="path3400-1-6" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 39.586716,53.142468 v -4.92455"
+         id="path3404-2-6" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 41.645773,53.142328 v -4.92456"
+         id="path3408-4-7" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 43.704829,53.142178 v -4.92456"
+         id="path3412-5-7" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45.763886,53.148208 v -4.92455"
+         id="path3416-0-8" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 47.822942,53.148068 v -4.92456"
+         id="path3420-4-5" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 49.881999,53.154098 v -4.92455"
+         id="path3424-5-0" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 31.380186,38.789672 V 33.852743"
+         id="path3879-6-5" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 33.439243,38.783337 V 33.85878"
+         id="path3881-1-3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 35.498299,38.783188 V 33.858632"
+         id="path3883-5-5" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 37.557356,38.78304 V 33.858484"
+         id="path3885-7-9" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 39.616412,38.782892 V 33.858335"
+         id="path3887-1-5" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 41.675469,38.782743 V 33.858187"
+         id="path3889-1-9" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 43.734525,38.782594 V 33.858038"
+         id="path3891-3-3" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 45.793582,38.788633 V 33.864076"
+         id="path3893-1-1" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 47.852638,38.788484 V 33.863928"
+         id="path3895-2-0" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 49.911694,38.794522 V 33.869966"
+         id="path3897-7-6" />
+      <rect
+         style="display:inline;fill:#9b4834;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect315-8-7"
+         width="13.633473"
+         height="17.826706"
+         x="-50.364338"
+         y="31.70223"
+         transform="rotate(-90)" />
+      <rect
+         style="display:inline;fill:#ffffff;fill-opacity:0.183007;stroke:#000000;stroke-width:0.47625;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect35303-7-1"
+         width="13.597801"
+         height="3.2050579"
+         x="-50.338207"
+         y="46.314335"
+         ry="0.014793055"
+         transform="rotate(-90)" />
+      <rect
+         style="display:inline;fill:#5b443f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.385675;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect43951-8-4"
+         width="13.729293"
+         height="1.4044406"
+         x="-50.403957"
+         y="31.646814"
+         ry="0.0064822431"
+         transform="rotate(-90)" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Turrets"
+     style="display:inline">
+    <path
+       style="display:inline;fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6648-6"
+       sodipodi:type="arc"
+       sodipodi:cx="-69.717789"
+       sodipodi:cy="43.165791"
+       sodipodi:rx="0.065006182"
+       sodipodi:ry="0.039678439"
+       sodipodi:start="0.012398051"
+       sodipodi:end="3.1395506"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       transform="rotate(-90)"
+       d="m -69.652788,43.166282 a 0.06500618,0.03967844 0 0 1 -0.06534,0.03919 0.06500618,0.03967844 0 0 1 -0.06467,-0.0396"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankTurret.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="display:inline;fill:#384e76;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4511-6"
+       cx="-68.946587"
+       cy="40.582458"
+       rx="5.2579284"
+       ry="6.1184907"
+       transform="rotate(-90)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankTurret.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#375a8b;fill-opacity:1;stroke:#000000;stroke-width:0.0233861;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 43.348739,73.187218 c -0.382087,-0.136786 -0.432782,-0.158294 -0.760047,-0.322467 -0.814144,-0.408415 -1.461112,-0.963827 -1.941643,-1.666877 -0.268255,-0.392477 -0.504115,-0.959996 -0.612314,-1.473324 -0.06176,-0.292997 -0.06082,-1.286458 0.0016,-1.555174 0.180682,-0.779493 0.510808,-1.387054 1.066097,-1.962046 0.637537,-0.660159 1.376547,-1.117876 2.344898,-1.45235 0.200621,-0.06929 0.340673,-0.105555 0.374179,-0.09687 0.08326,0.02157 0.606727,0.37066 0.856372,0.5711 0.870392,0.69884 1.506352,1.664928 1.746771,2.653526 0.437912,1.800688 -0.266448,3.647907 -1.855393,4.865864 -0.314931,0.241399 -0.820909,0.557042 -0.886206,0.552835 -0.01016,-6.61e-4 -0.160541,-0.05205 -0.334182,-0.114213 z"
+       id="path11089"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankTurret.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 43.637103,73.435894 C 41.169226,72.714509 39.77819,70.864567 39.82728,68.925399"
+       id="path7700-3"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankTurret.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 43.733345,64.509749 c -2.467877,0.713028 -3.955155,2.511319 -3.906065,4.428024"
+       id="path9397-1"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankTurret.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#392d21;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path24857-0"
+       cx="-68.86216"
+       cy="43.434391"
+       rx="1.1481529"
+       ry="1.3596176"
+       transform="rotate(-90)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankTurret.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4869-7"
+       width="1.3946972"
+       height="12.838507"
+       x="-69.575432"
+       y="43.518375"
+       ry="0"
+       transform="rotate(-90)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankTurret.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6650-8"
+       sodipodi:type="arc"
+       sodipodi:cx="-68.878899"
+       sodipodi:cy="-43.654179"
+       sodipodi:rx="0.69799709"
+       sodipodi:ry="0.40696248"
+       sodipodi:start="6.274737"
+       sodipodi:end="3.1395506"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       transform="matrix(0,-1,-1,0,0,0)"
+       d="m -68.180926,-43.657617 a 0.69799709,0.40696248 0 0 1 -0.345165,0.354587 0.69799709,0.40696248 0 0 1 -0.699278,0.0021 0.69799709,0.40696248 0 0 1 -0.351525,-0.352456"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankTurret.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g75336"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankTurret.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <ellipse
+         style="display:inline;fill:#753c32;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path4511-6-1"
+         cx="-43.547604"
+         cy="40.615585"
+         rx="5.2579284"
+         ry="6.1184907"
+         transform="rotate(-90)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:#ff3c3c;fill-opacity:0.168627;stroke:#000000;stroke-width:0.0233861;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 43.381863,47.788236 c -0.38209,-0.136785 -0.43278,-0.158294 -0.76005,-0.322467 -0.81414,-0.408414 -1.46111,-0.963827 -1.94164,-1.666877 -0.26826,-0.392477 -0.50412,-0.959996 -0.61231,-1.473324 -0.0618,-0.292997 -0.0608,-1.286457 0.002,-1.555174 0.18068,-0.779493 0.5108,-1.387054 1.06609,-1.962046 0.63754,-0.660159 1.37655,-1.117876 2.3449,-1.45235 0.20062,-0.0693 0.34067,-0.105555 0.37418,-0.09687 0.0833,0.02157 0.60673,0.370661 0.85637,0.571101 0.8704,0.698839 1.50636,1.664927 1.74677,2.653525 0.43792,1.800688 -0.26644,3.647908 -1.85539,4.865864 -0.31493,0.241399 -0.82091,0.557042 -0.88621,0.552835 -0.0102,-6.61e-4 -0.16054,-0.05205 -0.33418,-0.114213 z"
+         id="path11089-1"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 43.670233,48.036912 c -2.46788,-0.721384 -3.85892,-2.571327 -3.80983,-4.510495"
+         id="path7700-3-2"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 43.766473,39.110767 c -2.46788,0.713029 -3.95516,2.511319 -3.90607,4.428025"
+         id="path9397-1-9"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <ellipse
+         style="fill:#392d21;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path24857-0-0"
+         cx="-43.463177"
+         cy="43.467514"
+         rx="1.1481529"
+         ry="1.3596176"
+         transform="rotate(-90)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="display:inline;fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4869-7-4"
+         width="1.3946972"
+         height="12.838507"
+         x="-44.176449"
+         y="43.551491"
+         ry="0"
+         transform="rotate(-90)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path6650-8-4"
+         sodipodi:type="arc"
+         sodipodi:cx="-43.479912"
+         sodipodi:cy="-43.695576"
+         sodipodi:rx="0.69799709"
+         sodipodi:ry="0.40696248"
+         sodipodi:start="6.274737"
+         sodipodi:end="3.1395506"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         transform="matrix(0,-1,-1,0,0,0)"
+         d="m -42.78194,-43.699014 a 0.69799709,0.40696248 0 0 1 -0.345164,0.354587 0.69799709,0.40696248 0 0 1 -0.699278,0.0021 0.69799709,0.40696248 0 0 1 -0.351525,-0.352456"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+    </g>
+    <g
+       id="g75249"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Graphics\eMan.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#7d2307;fill-opacity:1;stroke:#000000;stroke-width:0.0664349;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect66374"
+         width="1.2778537"
+         height="0.545443"
+         x="45.340271"
+         y="37.28558"
+         ry="0.20181307"
+         transform="matrix(0.94316948,-0.33231209,0.26937874,0.96303432,0,0)" />
+      <rect
+         style="fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.11859;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect64400"
+         width="3.8948762"
+         height="0.57021701"
+         x="53.14093"
+         y="20.157204"
+         ry="0.21097939" />
+      <rect
+         style="fill:#7d2307;fill-opacity:1;stroke:#000000;stroke-width:0.053512;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect60273"
+         width="1.6784643"
+         height="4.543623"
+         x="51.588257"
+         y="16.943554"
+         ry="0.53121948" />
+      <ellipse
+         style="fill:#9a3c2c;fill-opacity:1;stroke:#000000;stroke-width:0.0539612;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path59293"
+         cx="52.551514"
+         cy="19.215364"
+         rx="1.5922451"
+         ry="1.5513806" />
+      <ellipse
+         style="fill:#b54633;fill-opacity:1;stroke:#000000;stroke-width:0.0464066;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path59397"
+         cx="52.551514"
+         cy="19.215364"
+         rx="0.99259114"
+         ry="0.96561062" />
+    </g>
+    <g
+       id="g64368"
+       transform="matrix(0.33353691,0,0,0.32820579,14.54004,16.614638)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eJeep.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#5b210f;fill-opacity:1;stroke:#000000;stroke-width:0.114671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect64362"
+         width="3.5233498"
+         height="9.9394951"
+         x="60.54866"
+         y="11.732076"
+         ry="1.16208" />
+      <ellipse
+         style="fill:#9a3c2c;fill-opacity:1;stroke:#000000;stroke-width:0.132292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse64364"
+         cx="62.310337"
+         cy="16.701822"
+         rx="3.903569"
+         ry="3.8033853" />
+      <ellipse
+         style="fill:#b54633;fill-opacity:1;stroke:#000000;stroke-width:0.113771;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse64366"
+         cx="62.310337"
+         cy="16.701822"
+         rx="2.4334495"
+         ry="2.3673036" />
+    </g>
+    <g
+       id="g64376"
+       transform="matrix(0.33353691,0,0,0.32820579,14.341602,11.521409)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eJeep.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#5b210f;fill-opacity:1;stroke:#000000;stroke-width:0.114671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect64370"
+         width="3.5233498"
+         height="9.9394951"
+         x="60.54866"
+         y="11.732076"
+         ry="1.16208" />
+      <ellipse
+         style="fill:#9a3c2c;fill-opacity:1;stroke:#000000;stroke-width:0.132292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse64372"
+         cx="62.310337"
+         cy="16.701822"
+         rx="3.903569"
+         ry="3.8033853" />
+      <ellipse
+         style="fill:#b54633;fill-opacity:1;stroke:#000000;stroke-width:0.113771;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse64374"
+         cx="62.310337"
+         cy="16.701822"
+         rx="2.4334495"
+         ry="2.3673036" />
+    </g>
+    <rect
+       style="fill:#876000;fill-opacity:1;stroke:#000000;stroke-width:0.152666;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect868"
+       width="2.8917787"
+       height="2.0128343"
+       x="68.134186"
+       y="25.848793"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Bullet.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#876000;fill-opacity:1;stroke:#000000;stroke-width:0.15875458;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1832"
+       sodipodi:type="arc"
+       sodipodi:cx="-26.955988"
+       sodipodi:cy="70.674454"
+       sodipodi:rx="1.0065098"
+       sodipodi:ry="2.9408963"
+       sodipodi:start="0.012398046"
+       sodipodi:end="3.1395506"
+       sodipodi:arc-type="arc"
+       sodipodi:open="true"
+       transform="matrix(-0.01214382,-0.99992626,0.99999902,-0.00139794,0,0)"
+       inkscape:transform-center-x="-0.50312218"
+       inkscape:transform-center-y="0.13684209"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Bullet.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       d="m -25.949556,70.710914 a 1.0065098,2.9408963 0 0 1 -1.011644,2.904397 1.0065098,2.9408963 0 0 1 -1.001296,-2.934852" />
+    <rect
+       style="fill:#876000;fill-opacity:1;stroke:none;stroke-width:0.156503;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2084"
+       width="0.199265"
+       height="1.8576642"
+       x="70.872932"
+       y="25.926153"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Bullet.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
