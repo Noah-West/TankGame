@@ -65,10 +65,22 @@ public class GameApp extends JPanel{
 	//keeping player on screen
 		Rectangle box = player.rectBounds();
 		double[] pos = player.pos();
-		if(box.getX()<0)pos[0] += 10;
-		else if(box.getX()+box.getWidth()>800)pos[0] -= 10;
-		if(box.getY()<0)pos[1] += 10;
-		else if(box.getY()+box.getHeight()>600)pos[1] -= 10;
+		if(box.getX()<0) {
+			pos[0] += 10;
+			player.takeDamage(1);
+		}
+		else if(box.getX()+box.getWidth()>800) {
+			pos[0] -= 10;
+			player.takeDamage(1);
+		}
+		if(box.getY()<0) {
+			pos[1] += 10;
+			player.takeDamage(1);
+		}
+		else if(box.getY()+box.getHeight()>600) {
+			pos[1] -= 10;
+			player.takeDamage(1);
+		}
 		player.pos(pos);
 	//stepping/deleting shots
 		long t = System.currentTimeMillis();

@@ -13,8 +13,8 @@ public class PObj {
 		this(new double[] {x, y}, new double[] {mag, rad}, start);
 	}
 	public PObj(double[] pos, double[] vel, boolean start) {
-		this.pos = pos;
-		this.vel = vel;
+		this.pos = pos.clone();
+		this.vel = vel.clone();
 		this.rPos = 0;
 		this.rVel = 0;
 		this.scale = 1;
