@@ -8,18 +8,24 @@ import java.awt.geom.AffineTransform;
 import java.awt.geom.Area;
 import java.awt.geom.Point2D;
 public class Tank implements Shooter{
-	private AffineTransform prev;
-	private Area bounds, tranBounds;
-	private PObj pBody, pTurret;
-	private final double maxVel = 100;
-	private final double accConst = 3;
-	private long fireDel = 500;
+	protected AffineTransform prev;
+	protected Area bounds, tranBounds;
+	protected PObj pBody, pTurret;
+	protected final double maxVel = 100;
+	protected final double accConst = 3;
+	protected long fireDel = 500;
 	double[] pos, vel; // vel in form [mag, rad]
-	static ImageIcon iBody = new ImageIcon("Resource/TankBody.png");
-	static ImageIcon iTurret = new ImageIcon("Resource/TankTurret.png");
-	private int health;
-	private long lastFire;
+	protected ImageIcon iBody;
+	protected ImageIcon iTurret;
+	protected int health;
+	protected long lastFire;
 	public Tank(double x, double y, double mag, double rad, int health, boolean start) {
+		this(x, y, mag, rad, start);
+		this.health = health;
+		iBody = new ImageIcon("Resource/plrTankBody.png");                
+		iTurret = new ImageIcon("Resource/plrTankTurret.png");            
+	}
+	protected Tank(double x, double y, double mag, double rad, boolean start) {
 		this.health = health;
 		pos = new double[] {x, y};
 		vel = new double[] {mag, rad};
@@ -32,7 +38,6 @@ public class Tank implements Shooter{
 		bounds = new Area(new Rectangle(-41, -36, 82, 72));
 		tranBounds = bounds;
 		lastFire = System.currentTimeMillis();
-
 	}
 
 	public Bullet fire() {
@@ -63,20 +68,22 @@ public class Tank implements Shooter{
 	}
 	public void draw(Graphics2D g2d) {
 		prev = g2d.getTransform();
+	//health bar
 		g2d.setColor(gCols.health);
-		g2d.fillRect((int)pos[0]-health/4,(int)pos[1]-45,health/2,5);
+		g2d.fillRect((int)pos[0]-25,(int)pos[1]-45,health/2,5);
+	//reload bar
 		g2d.setColor(gCols.reload);
 		g2d.fillRect((int)pos[0]-26, (int)pos[1]-37, (int)Math.min((System.currentTimeMillis()-lastFire)/10,50), 5);
-		//g2d.drawString(String.format("%.3f",vel[1]), 0, 50);
-		//g2d.draw(tranBounds);
+	//tank sprites
 		g2d.transform(pBody.trans());
 		iBody.paintIcon(null, g2d, -41, -36);
 		g2d.setTransform(pTurret.trans());
 		iTurret.paintIcon(null, g2d, -23,-20);
 		g2d.setTransform(prev);
 	}
-	public void takeDamage(int damage) {
-		
+	public boolean takeDamage(int damage) {
+		health -= damage;
+		return health < 0;
 	}
 	public void tStep() {
 		addVel(vel[0]>0?-2*accConst:(vel[0]<0?2*accConst:0));

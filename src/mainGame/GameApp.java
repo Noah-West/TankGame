@@ -15,6 +15,10 @@ public class GameApp extends JPanel{
 	private Tank player;
 	private boolean inBounds = true;
 	private ArrayList<Shooter> shooters = new ArrayList<Shooter>();
+	private ArrayList<ETank> eTanks = new ArrayList<ETank>();
+	private ArrayList<Shooter> eJeeps = new ArrayList<Shooter>();
+	private ArrayList<Shooter> eMen = new ArrayList<Shooter>();
+
 	private ArrayList<Bullet> shots = new ArrayList<Bullet>();
 	
 	public GameApp() {
@@ -24,7 +28,8 @@ public class GameApp extends JPanel{
 		setFocusable(true);
 		screenBounds = new Area(new Rectangle(0,0,800,600));
 		player = new Tank(400, 500, 0, 0, 100, false);
-		
+		shooters.add(player);
+		shooters.add(new ETank(50,50, 0,0,100,false));
 	}
 	public void play() {
 		long loopTime;
@@ -32,8 +37,7 @@ public class GameApp extends JPanel{
 	//game setup
 		lives = 5; score = 0;
 		Random rnd = new Random();
-		player.start();
-		//for(PhysObj o:enemies) o.start();
+		for(Shooter s:shooters)s.start();
 		while(true) {
 			loopTime = System.currentTimeMillis()+invFps;
 			
@@ -57,7 +61,7 @@ public class GameApp extends JPanel{
 		}
 	}
 	public void updatePhysics() {
-		player.tStep();
+		for(Shooter s:shooters) s.tStep();
 	//keeping player on screen
 		Rectangle box = player.rectBounds();
 		double[] pos = player.pos();
@@ -78,13 +82,14 @@ public class GameApp extends JPanel{
 			}
 		}
 	//handling hits
-		for(Shooter s:shooters) {
+		for(int i = 0; i < shooters.size();i++) {
+			Shooter s = shooters.get(i);
 			Area collide = s.tightBounds();
-			for(int i = 0; i < shots.size();i++) {
-				Bullet shot = shots.get(i);
+			for(int j = 0; j < shots.size();j++) {
+				Bullet shot = shots.get(j);
 				if(collide.contains(shot.tip())) {
-					s.takeDamage(shot.damage());
-					shots.remove(i);
+					if(s.takeDamage(shot.damage())) shooters.remove(i);
+					shots.remove(j);
 					shot = null;
 				}
 			}
@@ -100,7 +105,7 @@ public class GameApp extends JPanel{
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2d = (Graphics2D)g;
-		player.draw(g2d);
+		for(Shooter s:shooters) s.draw(g2d);
 		for(Bullet b:shots) b.draw(g2d);
 		
 	}

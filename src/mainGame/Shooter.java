@@ -25,6 +25,6 @@ public interface Shooter {
 	 * @return the vel
 	 */
 	public double[] vel();
-	public void takeDamage(int damage);
+	public boolean takeDamage(int damage);
 	
 }
