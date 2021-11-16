@@ -1,18 +1,14 @@
-package mainGame;
+package Bodies;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.geom.Area;
+import java.util.ArrayList;
 
-public interface Shooter {
-	public Bullet fire();
-	public void rotate(double rad);
-	public void rotTurret(double rad);
-	public void addVel(double mag);
-	public void acc(boolean dir);
+public interface Enemy {
 	public void draw(Graphics2D g2d);
-	public void tStep();
+	public void tStep(ArrayList<Bullet> shots);
 	public void start();
 	public Area tightBounds();
 	public Rectangle rectBounds();

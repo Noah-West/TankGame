@@ -1,4 +1,4 @@
-package mainGame;
+package Bodies;
 
 import java.awt.geom.AffineTransform;
 

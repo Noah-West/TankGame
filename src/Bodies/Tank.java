@@ -1,13 +1,17 @@
-package mainGame;
+package Bodies;
 
 import javax.swing.ImageIcon;
+
+import mainGame.gCols;
+
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.Color;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Area;
 import java.awt.geom.Point2D;
-public class Tank implements Shooter{
+import java.util.ArrayList;
+public class Tank {
 	protected AffineTransform prev;
 	protected Area bounds, tranBounds;
 	protected PObj pBody, pTurret;
@@ -15,18 +19,13 @@ public class Tank implements Shooter{
 	protected final double accConst = 3;
 	protected long fireDel = 500;
 	double[] pos, vel; // vel in form [mag, rad]
-	protected ImageIcon iBody;
-	protected ImageIcon iTurret;
+	private static ImageIcon iBody = new ImageIcon("Resource/plrTankBody.png");                
+	private static ImageIcon iTurret = new ImageIcon("Resource/plrTankTurret.png");  
 	protected int health;
 	protected long lastFire;
 	public Tank(double x, double y, double mag, double rad, int health, boolean start) {
-		this(x, y, mag, rad, start);
 		this.health = health;
-		iBody = new ImageIcon("Resource/plrTankBody.png");                
-		iTurret = new ImageIcon("Resource/plrTankTurret.png");            
-	}
-	protected Tank(double x, double y, double mag, double rad, boolean start) {
-		this.health = health;
+		          
 		pos = new double[] {x, y};
 		vel = new double[] {mag, rad};
 		pBody = new PObj(pos, vel, start);
@@ -40,12 +39,11 @@ public class Tank implements Shooter{
 		lastFire = System.currentTimeMillis();
 	}
 
-	public Bullet fire() {
+	public void fire(ArrayList<Bullet> shots) {
 		if(System.currentTimeMillis()>lastFire+fireDel) {
 			lastFire = System.currentTimeMillis();
-			return new Bullet(pTurret.pos()[0]+25*Math.cos(pTurret.rPos()),pTurret.pos()[1]+25*Math.sin(pTurret.rPos()), pTurret.rPos(), 2, true);
+			shots.add(new Bullet(pTurret.pos()[0]+25*Math.cos(pTurret.rPos()),pTurret.pos()[1]+25*Math.sin(pTurret.rPos()), pTurret.rPos(), 2, true));
 		}
-		return null;
 	}
 	public void rotate(double rad) {
 		vel[1] += rad;
