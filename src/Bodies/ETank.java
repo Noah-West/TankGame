@@ -17,22 +17,22 @@ public class ETank implements Enemy{
 	protected PObj pBody, pTurret;
 	protected final double maxVel = 100;
 	protected final double accConst = 3;
-	protected long fireDel = 500;
+	protected long fireDel = 800;
 	double[] pos, vel; // vel in form [mag, rad]
-	private static ImageIcon iBody = new ImageIcon("Resource/plrTankBody.png");                
-	private static ImageIcon iTurret = new ImageIcon("Resource/plrTankTurret.png");  
+	private static ImageIcon iBody = new ImageIcon("Resource/eTankBody.png");                
+	private static ImageIcon iTurret = new ImageIcon("Resource/eTankTurret.png");  
 	protected int health;
 	protected long lastFire;
-	public ETank(double x, double y, double mag, double rad, int health, boolean start) {
-		this.health = health;
+	public ETank(double x, double y, double rad, boolean start) {
+		this.health = 100;
 		pos = new double[] {x, y};
-		vel = new double[] {mag, rad};
+		vel = new double[] {30, rad};
 		pBody = new PObj(pos, vel, start);
 		pTurret = new PObj(pos, vel, start);
 		pBody.rPos(vel[1]);
 		pTurret.rPos(vel[1]);
-		pBody.scale(.6);
-		pTurret.scale(.6);
+		pBody.scale(.5);
+		pTurret.scale(.5);
 		bounds = new Area(new Rectangle(-41, -36, 82, 72));
 		tranBounds = bounds;
 		lastFire = System.currentTimeMillis();
@@ -50,10 +50,7 @@ public class ETank implements Enemy{
 		prev = g2d.getTransform();
 	//health bar
 		g2d.setColor(gCols.health);
-		g2d.fillRect((int)pos[0]-25,(int)pos[1]-45,health/2,5);
-	//reload bar
-		g2d.setColor(gCols.reload);
-		g2d.fillRect((int)pos[0]-26, (int)pos[1]-37, (int)Math.min((System.currentTimeMillis()-lastFire)/10,50), 5);
+		g2d.fillRect((int)pBody.pos[0]-25,(int)pBody.pos[1]-45,health/2,5);
 	//tank sprites
 		g2d.transform(pBody.trans());
 		iBody.paintIcon(null, g2d, -41, -36);
@@ -66,7 +63,6 @@ public class ETank implements Enemy{
 		return health < 0;
 	}
 	public void tStep(ArrayList<Bullet> shots) {
-		addVel(vel[0]>0?-2*accConst:(vel[0]<0?2*accConst:0));
 		pBody.tStep();
 		pTurret.tStep();
 		tranBounds = bounds.createTransformedArea(pBody.trans());
@@ -81,17 +77,6 @@ public class ETank implements Enemy{
 	}
 	public Rectangle rectBounds() {
 		return tranBounds.getBounds();
-	}
-	private void addVel(double mag) {
-		vel[0] += mag;
-		vel[0] = vel[0] >= maxVel ? maxVel : vel[0];
-		vel[0] = vel[0] <= -maxVel ? -maxVel : vel[0];
-		pBody.vel(vel);
-		pTurret.vel(vel);
-	}
-	private void acc(boolean dir) {
-		if(dir) addVel(3*accConst);
-		else addVel(-3*accConst);
 	}
 	public void pos(double[] pos) {
 		this.pos = pos;

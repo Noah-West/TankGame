@@ -16,17 +16,15 @@ public class Jeep implements Enemy{
 	protected PObj pBody;
 	protected final double maxVel = 100;
 	protected final double accConst = 3;
-	protected long fireDel = 500;
-	double[] pos, vel; // vel in form [mag, rad]
-	private static ImageIcon iBody = new ImageIcon("Resource/plrTankBody.png");                
+	protected long fireDel = 400;
+	double[] vel; // vel in form [mag, rad]
+	private static ImageIcon iBody = new ImageIcon("Resource/eJeep.png");                
 	protected int health;
 	protected long lastFire;
-	public Jeep(double x, double y, double mag, double rad, int health, boolean start) {
-		this.health = health;
-		iBody = new ImageIcon("Resource/eTankBody.png");                
-		
-		pos = new double[] {x, y};
-		vel = new double[] {mag, rad};
+	public Jeep(double x, double y, double rad, boolean start) {
+		this.health = 30;		
+		double[] pos = new double[] {x, y};
+		vel = new double[] {50, rad};
 		pBody = new PObj(pos, vel, start);
 		pBody.rPos(vel[1]);
 		pBody.scale(.6);
@@ -37,17 +35,14 @@ public class Jeep implements Enemy{
 	private void fire(ArrayList<Bullet> shots) {
 		if(System.currentTimeMillis()>lastFire+fireDel) {
 			lastFire = System.currentTimeMillis();
-			shots.add(new Bullet(pBody.pos()[0]+25*Math.cos(pBody.rPos()),pBody.pos()[1]+25*Math.sin(pBody.rPos()), pBody.rPos(), 2, true));
+			shots.add(new Bullet(pBody.pos()[0]+18*Math.cos(pBody.rPos()),pBody.pos()[1]+20*Math.sin(pBody.rPos()), pBody.rPos(), 1, true));
 		}
 	}
 	public void draw(Graphics2D g2d) {
 		prev = g2d.getTransform();
 	//health bar
 		g2d.setColor(gCols.health);
-		g2d.fillRect((int)pos[0]-25,(int)pos[1]-45,health/2,5);
-	//reload bar
-		g2d.setColor(gCols.reload);
-		g2d.fillRect((int)pos[0]-26, (int)pos[1]-37, (int)Math.min((System.currentTimeMillis()-lastFire)/10,50), 5);
+		g2d.fillRect((int)pBody.pos[0]-12,(int)pBody.pos[1]-35,health/2,5);
 	//tank sprites
 		g2d.transform(pBody.trans());
 		iBody.paintIcon(null, g2d, -41, -36);
@@ -55,10 +50,10 @@ public class Jeep implements Enemy{
 	}
 	public boolean takeDamage(int damage) {
 		health -= damage;
-		return health < 0;
+		return health <= 0;
 	}
 	public void tStep(ArrayList<Bullet> shots) {
-		addVel(vel[0]>0?-2*accConst:(vel[0]<0?2*accConst:0));
+		if(pBody.pos()[1] > )
 		pBody.tStep();
 		tranBounds = bounds.createTransformedArea(pBody.trans());
 		fire(shots);
@@ -78,19 +73,14 @@ public class Jeep implements Enemy{
 		vel[0] = vel[0] <= -maxVel ? -maxVel : vel[0];
 		pBody.vel(vel);
 	}
-	private void acc(boolean dir) {
-		if(dir) addVel(3*accConst);
-		else addVel(-3*accConst);
-	}
 	public void pos(double[] pos) {
-		this.pos = pos;
 		pBody.pos(pos);
 	}
 	/**
 	 * @return the pos
 	 */
 	public double[] pos() {
-		return pos;
+		return pBody.pos;
 	}
 	/**
 	 * @return the vel

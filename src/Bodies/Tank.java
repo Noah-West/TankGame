@@ -68,7 +68,7 @@ public class Tank {
 		prev = g2d.getTransform();
 	//health bar
 		g2d.setColor(gCols.health);
-		g2d.fillRect((int)pos[0]-25,(int)pos[1]-45,health/2,5);
+		g2d.fillRect((int)pos[0]-25,(int)pos[1]-45,health/4,5);
 	//reload bar
 		g2d.setColor(gCols.reload);
 		g2d.fillRect((int)pos[0]-26, (int)pos[1]-37, (int)Math.min((System.currentTimeMillis()-lastFire)/10,50), 5);

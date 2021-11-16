@@ -13,11 +13,14 @@ public class PObj {
 		this(new double[] {x, y}, new double[] {mag, rad}, start);
 	}
 	public PObj(double[] pos, double[] vel, boolean start) {
+		this(pos, vel, 1, start);
+	}
+	public PObj(double[] pos, double[] vel, double scale, boolean start) {
 		this.pos = pos.clone();
 		this.vel = vel.clone();
 		this.rPos = 0;
 		this.rVel = 0;
-		this.scale = 1;
+		this.scale = scale;
 		trans = new AffineTransform();
 		trans.setToTranslation(pos[0], pos[1]);
 		if(start)start();

@@ -25,8 +25,10 @@ public class GameApp extends JPanel{
 		addKeyListener(keyb);
 		setFocusable(true);
 		screenBounds = new Area(new Rectangle(0,0,800,600));
-		player = new Tank(400, 500, 0, 0, 100, false);
-		enemies.add(new ETank(50,50, 0,0,100,false));
+		player = new Tank(400, 500, 0, 0, 200, false);
+		enemies.add(new Jeep(50,50, Math.PI/4,false));
+		enemies.add(new ETank(500,50, 4*Math.PI/6,false));
+
 	}
 	public void play() {
 		long loopTime;
@@ -48,7 +50,7 @@ public class GameApp extends JPanel{
 			if(keyb.keys[KeyEvent.VK_Z]) player.rotTurret(-rotRate);
 			if(keyb.keys[KeyEvent.VK_X]) player.rotTurret(rotRate);
 
-			if(keyb.keys[KeyEvent.VK_Q]) return;
+			if(keyb.keys[KeyEvent.VK_Q]) System.exit(0);
 			if(keyb.keys[KeyEvent.VK_SPACE]) {
 				player.fire(shots);
 			}
@@ -67,19 +69,19 @@ public class GameApp extends JPanel{
 		double[] pos = player.pos();
 		if(box.getX()<0) {
 			pos[0] += 10;
-			player.takeDamage(1);
+			player.takeDamage(3);
 		}
 		else if(box.getX()+box.getWidth()>800) {
 			pos[0] -= 10;
-			player.takeDamage(1);
+			player.takeDamage(3);
 		}
 		if(box.getY()<0) {
 			pos[1] += 10;
-			player.takeDamage(1);
+			player.takeDamage(3);
 		}
 		else if(box.getY()+box.getHeight()>600) {
 			pos[1] -= 10;
-			player.takeDamage(1);
+			player.takeDamage(3);
 		}
 		player.pos(pos);
 	//stepping/deleting shots
@@ -104,14 +106,15 @@ public class GameApp extends JPanel{
 			}
 		}
 		for(int i = 0; i < enemies.size();i++) {
-			Enemy s = enemies.get(i);
-			collide = s.tightBounds();
+			Enemy e = enemies.get(i);
+			collide = e.tightBounds();
 			for(int j = 0; j < shots.size();j++) {
 				Bullet shot = shots.get(j);
 				if(collide.contains(shot.tip())) {
-					if(s.takeDamage(shot.damage())) enemies.remove(i);
+					if(e.takeDamage(shot.damage())) enemies.remove(i);
 					shots.remove(j);
 					shot = null;
+					e = null;
 				}
 			}
 		}
@@ -134,10 +137,12 @@ public class GameApp extends JPanel{
 		JFrame frame = new JFrame("SpaceDefender");
 		Container cont = frame.getContentPane();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		GameApp app = new GameApp();
-		cont.add(app); 
-		frame.pack(); 
-		frame.setVisible(true);
-		app.play();
+		while(true) {
+			GameApp app = new GameApp();
+			cont.add(app); 
+			frame.pack(); 
+			frame.setVisible(true);
+			app.play();
+		}
 	}
 }

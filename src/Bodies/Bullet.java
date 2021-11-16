@@ -8,7 +8,7 @@ import javax.swing.ImageIcon;
 
 public class Bullet {
 	//lookup tables for bullet types		Infantry, Machine Gun, Tank		
-	private final static int[] speed 	= new int[] {700, 500, 300};
+	private final static int[] speed 	= new int[] {700, 400, 250};
 	private final static int[] time 	= new int[] {1000, 1500, 2000};
 	private final static double[] scale = new double[] {.1, .2, .4};
 	private final static int[] damage 	= new int[] {1, 3, 10};
