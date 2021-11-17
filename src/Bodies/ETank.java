@@ -23,8 +23,9 @@ public class ETank implements Enemy{
 	private static ImageIcon iTurret = new ImageIcon("Resource/eTankTurret.png");  
 	protected int health;
 	protected long lastFire;
+	private boolean tPlr;
 	public ETank(double x, double y, double rad, boolean start) {
-		this.health = 100;
+		this.health = 30;
 		pos = new double[] {x, y};
 		vel = new double[] {30, rad};
 		pBody = new PObj(pos, vel, start);
@@ -36,6 +37,10 @@ public class ETank implements Enemy{
 		bounds = new Area(new Rectangle(-41, -36, 82, 72));
 		tranBounds = bounds;
 		lastFire = System.currentTimeMillis();
+	}
+	public ETank(double x, double y, double rad, boolean start, boolean tPlr) {
+		this(x,y,rad,start);
+		this.tPlr = tPlr;
 	}
 	private void fire(ArrayList<Bullet> shots) {
 		if(System.currentTimeMillis()>lastFire+fireDel) {
@@ -50,7 +55,7 @@ public class ETank implements Enemy{
 		prev = g2d.getTransform();
 	//health bar
 		g2d.setColor(gCols.health);
-		g2d.fillRect((int)pBody.pos[0]-25,(int)pBody.pos[1]-45,health/2,5);
+		g2d.fillRect((int)pBody.pos[0]-15,(int)pBody.pos[1]-45,health/2,5);
 	//tank sprites
 		g2d.transform(pBody.trans());
 		iBody.paintIcon(null, g2d, -41, -36);
@@ -60,13 +65,30 @@ public class ETank implements Enemy{
 	}
 	public boolean takeDamage(int damage) {
 		health -= damage;
-		return health < 0;
+		return health <= 0;
 	}
-	public void tStep(ArrayList<Bullet> shots) {
+	private static double rotConst = (Math.PI/30)/5;
+	public void tStep(ArrayList<Bullet> shots, Tank plr) {
+		double targAng;
+		if(tPlr) {
+			targAng = PObj.toMagRad(new double[] {pBody.pos()[0]-plr.pos()[0], pBody.pos()[1]-plr.pos()[1]})[1];
+		}
+		targAng = PObj.toMagRad(new double[] {pBody.pos()[0]-400, pBody.pos()[1]-600})[1];//angle to castle
+		
+		pTurret.rPos(pTurret.rPos()+(targAng>pTurret.rPos()?rotConst:-rotConst));
+
+		if(pBody.pos()[1] > 400) {
+			vel = new double[] {0,pBody.vel()[1]};
+			pBody.vel(vel);
+			pTurret.vel(vel);
+		}
 		pBody.tStep();
 		pTurret.tStep();
 		tranBounds = bounds.createTransformedArea(pBody.trans());
 		fire(shots);
+	}
+	public void targetPlayer(boolean targ) {
+		tPlr = targ;
 	}
 	public void start() {
 		pBody.start();

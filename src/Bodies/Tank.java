@@ -15,9 +15,9 @@ public class Tank {
 	protected AffineTransform prev;
 	protected Area bounds, tranBounds;
 	protected PObj pBody, pTurret;
-	protected final double maxVel = 100;
+	protected final double maxVel = 80;
 	protected final double accConst = 3;
-	protected long fireDel = 500;
+	protected long fireDel = 400;
 	double[] pos, vel; // vel in form [mag, rad]
 	private static ImageIcon iBody = new ImageIcon("Resource/plrTankBody.png");                
 	private static ImageIcon iTurret = new ImageIcon("Resource/plrTankTurret.png");  
@@ -42,7 +42,7 @@ public class Tank {
 	public void fire(ArrayList<Bullet> shots) {
 		if(System.currentTimeMillis()>lastFire+fireDel) {
 			lastFire = System.currentTimeMillis();
-			shots.add(new Bullet(pTurret.pos()[0]+25*Math.cos(pTurret.rPos()),pTurret.pos()[1]+25*Math.sin(pTurret.rPos()), pTurret.rPos(), 2, true));
+			shots.add(new Bullet(pTurret.pos()[0]+25*Math.cos(pTurret.rPos()),pTurret.pos()[1]+25*Math.sin(pTurret.rPos()), pTurret.rPos(), 0, true));
 		}
 	}
 	public void rotate(double rad) {

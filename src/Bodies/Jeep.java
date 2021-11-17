@@ -22,7 +22,7 @@ public class Jeep implements Enemy{
 	protected int health;
 	protected long lastFire;
 	public Jeep(double x, double y, double rad, boolean start) {
-		this.health = 30;		
+		this.health = 10;		
 		double[] pos = new double[] {x, y};
 		vel = new double[] {50, rad};
 		pBody = new PObj(pos, vel, start);
@@ -42,7 +42,7 @@ public class Jeep implements Enemy{
 		prev = g2d.getTransform();
 	//health bar
 		g2d.setColor(gCols.health);
-		g2d.fillRect((int)pBody.pos[0]-12,(int)pBody.pos[1]-35,health/2,5);
+		g2d.fillRect((int)pBody.pos[0]-7,(int)pBody.pos[1]-35,health/2,5);
 	//tank sprites
 		g2d.transform(pBody.trans());
 		iBody.paintIcon(null, g2d, -41, -36);
@@ -52,8 +52,8 @@ public class Jeep implements Enemy{
 		health -= damage;
 		return health <= 0;
 	}
-	public void tStep(ArrayList<Bullet> shots) {
-		if(pBody.pos()[1] > )
+	public void tStep(ArrayList<Bullet> shots, Tank plr) {
+		if(pBody.pos()[1] > 400) pBody.vel(new double[] {0,pBody.vel()[1]});
 		pBody.tStep();
 		tranBounds = bounds.createTransformedArea(pBody.trans());
 		fire(shots);

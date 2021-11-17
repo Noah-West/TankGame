@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public interface Enemy {
 	public void draw(Graphics2D g2d);
-	public void tStep(ArrayList<Bullet> shots);
+	public void tStep(ArrayList<Bullet> shots, Tank plr);
 	public void start();
 	public Area tightBounds();
 	public Rectangle rectBounds();
