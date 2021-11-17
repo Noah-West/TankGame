@@ -112,7 +112,7 @@ public class GameApp extends JPanel{
 			collide = e.tightBounds();
 			for(int j = 0; j < shots.size();j++) {//loop though shots, on each enemy
 				Bullet shot = shots.get(j);
-				if(collide.contains(shot.tip())) {//if shot hit the enemy
+				if(collide.contains(shot.tip())&&shot.type()==0) {//if shot hit the enemy
 					if(e.takeDamage(shot.damage())) {//if enemy dies
 						score += (e instanceof Jeep)?5:10;//5 points for jeep, 10 for tank
 						enemies.remove(i);
@@ -131,25 +131,24 @@ public class GameApp extends JPanel{
 	private long nextEnemy;
 	private int enemyDel = 2000;
 	private double tankProb = 0;
-	private double prevEnemyX;
+	private double genEnemyX;
 	private static Random rnd = new Random(System.currentTimeMillis());
 	/**
 	 * generate new enemies based on a set of changing probabilities
 	 */
 	private void genEnemies() {
 		if(System.currentTimeMillis()<nextEnemy)return;
-		double x = prevEnemyX + (rnd.nextDouble()-.5)*700;
-		prevEnemyX = (x+800)%800;
-		double rad = PObj.toMagRad(new double[] {400+clampGaus()*300-x, 450})[1]; //point towards center
+		genEnemyX = (genEnemyX + rnd.nextDouble()*700)%800;
+		double rad = PObj.toMagRad(new double[] {400-genEnemyX, 450})[1]; //point towards center   -clampGaus()*300
 		//rad += Math.PI/6*clampGaus(); // add some randomness, up to 45 deg either way
 		Enemy newEnemy;
 		if(rnd.nextDouble()<tankProb) { //randomly select tank
-			boolean tPlr = Math.min(score, 70)<rnd.nextInt(20,100); //after score reaches 20, increasing probability of tank targeting player
-			newEnemy = new ETank(x,-50, rad,false, tPlr);
+			boolean tPlr = Math.min(score, 70)<(rnd.nextInt(80)+20); //after score reaches 20, increasing probability of tank targeting player
+			newEnemy = new ETank(genEnemyX,-50, rad,false, tPlr);
 			tankProb -= .15; //decrease probability of next enemy being a tank
 		}
 		else {
-			newEnemy = new Jeep(x,-50,rad,false);
+			newEnemy = new Jeep(genEnemyX,-50,rad,false);
 			tankProb += .1; //increase probability of next enemy being a tank
 		}					// starts at 0, so hevily biased towards jeeps at beginning
 		enemies.add(newEnemy);		//capped at .7 probability of targeting player
@@ -158,7 +157,7 @@ public class GameApp extends JPanel{
 		enemyDel -= (enemyDel < 1200)?0:30; //decrement delay between enemies until it reaches 600ms
 	}
 	public static double clampGaus() { //returns gaussian distributed multiplier from -1 to 1
-		return Math.max(-1, Math.min(rnd.nextGaussian(0, .33), 1));
+		return Math.max(-1, Math.min(rnd.nextGaussian(), 1));
 	}
 	private boolean inBounds(Shape obj) {
 		Area o = new Area(obj);

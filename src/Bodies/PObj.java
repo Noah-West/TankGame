@@ -51,7 +51,7 @@ public class PObj {
 	public static double[] toMagRad(double[] in){
 		double[] out = new double[2];
 		out[0] = Math.sqrt(in[0]*in[0]+in[1]*in[1]);
-		out[1] = Math.atan(in[1]/in[0]);
+		out[1] = Math.atan2(in[1],in[0]);
 		return out;
 	}
 	/**

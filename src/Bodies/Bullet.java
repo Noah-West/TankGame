@@ -9,7 +9,7 @@ import javax.swing.ImageIcon;
 public class Bullet {
 	//lookup tables for bullet types		Player, Machine Gun, Tank		
 	private final static int[] speed 	= new int[] {400, 400, 250};
-	private final static int[] time 	= new int[] {1500, 1000, 2000};
+	private final static int[] time 	= new int[] {1500, 1000, 1000};
 	private final static double[] scale = new double[] {.4, .2, .4};
 	private final static int[] damage 	= new int[] {10, 3, 10};
 	
@@ -49,6 +49,9 @@ public class Bullet {
 	public void start() {
 		endTime = System.currentTimeMillis()+time[type];
 		p.start();
+	}
+	public int type() {
+		return type;
 	}
 	public void tStep() {
 		p.tStep();
