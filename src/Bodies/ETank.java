@@ -17,7 +17,7 @@ public class ETank implements Enemy{
 	protected PObj pBody, pTurret;
 	protected final double maxVel = 100;
 	protected final double accConst = 3;
-	protected long fireDel = 800;
+	protected long fireDel = 1000;
 	double[] pos, vel; // vel in form [mag, rad]
 	private static ImageIcon iBody = new ImageIcon("Resource/eTankBody.png");                
 	private static ImageIcon iTurret = new ImageIcon("Resource/eTankTurret.png");  
@@ -59,7 +59,8 @@ public class ETank implements Enemy{
 	//tank sprites
 		g2d.transform(pBody.trans());
 		iBody.paintIcon(null, g2d, -41, -36);
-		g2d.setTransform(pTurret.trans());
+		g2d.setTransform(prev);
+		g2d.transform(pTurret.trans());
 		iTurret.paintIcon(null, g2d, -23,-20);
 		g2d.setTransform(prev);
 	}
@@ -70,10 +71,8 @@ public class ETank implements Enemy{
 	private static double rotConst = (Math.PI/30)/5;
 	public void tStep(ArrayList<Bullet> shots, Tank plr) {
 		double targAng;
-		if(tPlr) {
-			targAng = PObj.toMagRad(new double[] {pBody.pos()[0]-plr.pos()[0], pBody.pos()[1]-plr.pos()[1]})[1];
-		}
-		targAng = PObj.toMagRad(new double[] {pBody.pos()[0]-400, pBody.pos()[1]-600})[1];//angle to castle
+		if(tPlr) targAng = Math.atan2(plr.pos()[1]-pBody.pos()[1], plr.pos()[0]-pBody.pos()[0]);
+		else targAng = Math.atan2(600-pBody.pos()[1], 400-pBody.pos()[0]);//angle to castle
 		
 		pTurret.rPos(pTurret.rPos()+(targAng>pTurret.rPos()?rotConst:-rotConst));
 

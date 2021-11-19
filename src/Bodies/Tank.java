@@ -75,7 +75,8 @@ public class Tank {
 	//tank sprites
 		g2d.transform(pBody.trans());
 		iBody.paintIcon(null, g2d, -41, -36);
-		g2d.setTransform(pTurret.trans());
+		g2d.setTransform(prev);
+		g2d.transform(pTurret.trans());
 		iTurret.paintIcon(null, g2d, -23,-20);
 		g2d.setTransform(prev);
 	}

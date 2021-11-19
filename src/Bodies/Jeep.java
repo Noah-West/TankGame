@@ -16,7 +16,7 @@ public class Jeep implements Enemy{
 	protected PObj pBody;
 	protected final double maxVel = 100;
 	protected final double accConst = 3;
-	protected long fireDel = 400;
+	protected long fireDel = 600;
 	double[] vel; // vel in form [mag, rad]
 	private static ImageIcon iBody = new ImageIcon("Resource/eJeep.png");                
 	protected int health;
