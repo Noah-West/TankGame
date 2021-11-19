@@ -18,7 +18,7 @@ public class Menu {
 	private ImageIcon tanks;
 	private boolean arrow = false;
 	private boolean inMenu = false;
-	private ArrayList<Integer> scores = new ArrayList<Integer>();
+	private ArrayList<Integer> scores = new ArrayList<Integer>(5);
 	private File scoresF;
 	public Menu(){
 		//tanks = new ImageIcon("Resource/logo.png"); 
@@ -26,7 +26,10 @@ public class Menu {
 		arrow = false;	
 		try{
 			scoresF = new File("TankScores");
-			if(!scoresF.exists()) rewriteScores(scoresF);
+			if(!scoresF.exists()) {
+				for(int i = 0; i<5; i++)scores.add(0);
+				rewriteScores(scoresF);
+			}
 			Scanner sScan = new Scanner(scoresF);
 			for(int i = 0; i <5; i++){
 				scores.add(sScan.nextInt());

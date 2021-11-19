@@ -18,7 +18,7 @@ public class Jeep implements Enemy{
 	protected final double accConst = 3;
 	protected long fireDel = 600;
 	double[] vel; // vel in form [mag, rad]
-	private static ImageIcon iBody = new ImageIcon("Resource/eJeep.png");                
+	private static ImageIcon iBody = new ImageIcon(ClassLoader.getSystemResource("eJeep.png"));                
 	protected int health;
 	protected long lastFire;
 	public Jeep(double x, double y, double rad, boolean start) {
@@ -40,9 +40,7 @@ public class Jeep implements Enemy{
 	}
 	public void draw(Graphics2D g2d) {
 		prev = g2d.getTransform();
-	//health bar
-		g2d.setColor(gCols.health);
-		g2d.fillRect((int)pBody.pos[0]-7,(int)pBody.pos[1]-35,health/2,5);
+	
 	//tank sprites
 		g2d.transform(pBody.trans());
 		iBody.paintIcon(null, g2d, -41, -36);

@@ -19,8 +19,8 @@ public class Tank {
 	protected final double accConst = 3;
 	protected long fireDel = 400;
 	double[] pos, vel; // vel in form [mag, rad]
-	private static ImageIcon iBody = new ImageIcon("Resource/plrTankBody.png");                
-	private static ImageIcon iTurret = new ImageIcon("Resource/plrTankTurret.png");  
+	private static ImageIcon iBody = new ImageIcon(ClassLoader.getSystemResource("plrTankBody.png"));                
+	private static ImageIcon iTurret = new ImageIcon(ClassLoader.getSystemResource("plrTankTurret.png"));  
 	protected int health;
 	protected long lastFire;
 	public Tank(double x, double y, double mag, double rad, int health, boolean start) {

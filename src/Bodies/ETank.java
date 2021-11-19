@@ -19,8 +19,8 @@ public class ETank implements Enemy{
 	protected final double accConst = 3;
 	protected long fireDel = 1000;
 	double[] pos, vel; // vel in form [mag, rad]
-	private static ImageIcon iBody = new ImageIcon("Resource/eTankBody.png");                
-	private static ImageIcon iTurret = new ImageIcon("Resource/eTankTurret.png");  
+	private static ImageIcon iBody = new ImageIcon(ClassLoader.getSystemResource("eTankBody.png"));                
+	private static ImageIcon iTurret = new ImageIcon(ClassLoader.getSystemResource("eTankTurret.png"));  
 	protected int health;
 	protected long lastFire;
 	private boolean tPlr;

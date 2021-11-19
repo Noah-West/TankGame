@@ -10,15 +10,15 @@ public class SFX {
 	public SFX() {
 		try {
 			AudioInputStream hitStream;
-			hitStream = AudioSystem.getAudioInputStream(new File("Resource/hit.wav"));
+			hitStream = AudioSystem.getAudioInputStream(ClassLoader.getSystemResource("hit.wav"));
 			hit = AudioSystem.getClip();
 			hit.open(hitStream);
 			AudioInputStream shootStream;
-			shootStream = AudioSystem.getAudioInputStream(new File("Resource/shot.wav"));
+			shootStream = AudioSystem.getAudioInputStream(ClassLoader.getSystemResource("shot.wav"));
 			shot = AudioSystem.getClip();
 			shot.open(shootStream);
 			AudioInputStream eHitStream;
-			eHitStream = AudioSystem.getAudioInputStream(new File("Resource/eHit.wav"));
+			eHitStream = AudioSystem.getAudioInputStream(ClassLoader.getSystemResource("eHit.wav"));
 			eHit = AudioSystem.getClip();
 			eHit.open(eHitStream);
 		} catch (Exception e) {

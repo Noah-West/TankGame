@@ -13,7 +13,7 @@ public class Bullet {
 	private final static double[] scale = new double[] {.4, .2, .4};
 	private final static int[] damage 	= new int[] {10, 3, 10};
 	
-	static ImageIcon Ibody = new ImageIcon("Resource/Bullet.png");
+	static ImageIcon Ibody = new ImageIcon(ClassLoader.getSystemResource("bullet.png"));
 	private AffineTransform prev;
 	private PObj p;
 	double[] pos, vel; // vel in form [mag, rad]

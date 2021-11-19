@@ -23,7 +23,8 @@ public class Castle {
 	
 		g2d.translate(pos[0], pos[1]);
 		g2d.scale(scale, scale);
-		iBody.paintIcon(null, g2d, -41, -36);
+		g2d.fill(tranBounds);
+		//iBody.paintIcon(null, g2d, -41, -36);
 		g2d.setTransform(prev);
 	}
 	public boolean takeDamage(int damage) {

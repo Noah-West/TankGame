@@ -20,6 +20,7 @@ public class GameApp extends JPanel{
 	private SFX sfx;
 	protected int score;
 	private Tank player;
+	private Castle cast;
 	private ArrayList<Enemy> enemies = new ArrayList<Enemy>();
 	private ArrayList<Bullet> shots = new ArrayList<Bullet>();
 	
@@ -27,6 +28,7 @@ public class GameApp extends JPanel{
 	public GameApp() {
 		sfx = new SFX();
 		menu = new Menu();
+		cast = new Castle(400, 500);
 		setBackground(gCols.bg); 
 		windScaler = new FScale(this, 800, 600);
 		addKeyListener(keyb);
@@ -45,10 +47,10 @@ public class GameApp extends JPanel{
 			loopTime = System.currentTimeMillis()+invFps;
 			
 		//key handling
-			if(keyb.keys[KeyEvent.VK_LEFT]) player.rotate(-rotRate);
-			if(keyb.keys[KeyEvent.VK_RIGHT]) player.rotate(rotRate);
-			if(keyb.keys[KeyEvent.VK_UP]) player.acc(true);
-			if(keyb.keys[KeyEvent.VK_DOWN]) player.acc(false);
+			if(keyb.keys[KeyEvent.VK_LEFT]||keyb.keys[KeyEvent.VK_A]) player.rotate(-rotRate);
+			if(keyb.keys[KeyEvent.VK_RIGHT]||keyb.keys[KeyEvent.VK_D]) player.rotate(rotRate);
+			if(keyb.keys[KeyEvent.VK_UP]||keyb.keys[KeyEvent.VK_W]) player.acc(true);
+			if(keyb.keys[KeyEvent.VK_DOWN]||keyb.keys[KeyEvent.VK_S]) player.acc(false);
 			if(keyb.keys[KeyEvent.VK_Z]) player.rotTurret(-rotRate);
 			if(keyb.keys[KeyEvent.VK_X]) player.rotTurret(rotRate);
 			if(keyb.keys[KeyEvent.VK_SPACE]) {
@@ -118,8 +120,8 @@ public class GameApp extends JPanel{
 			for(int j = 0; j < shots.size();j++) {//loop though shots, on each enemy
 				Bullet shot = shots.get(j);
 				if(collide.contains(shot.tip())&&shot.type()==0) {//if shot hit the enemy
+					sfx.eHit();
 					if(e.takeDamage(shot.damage())) {//if enemy dies
-						sfx.eHit();
 						score += (e instanceof Jeep)?5:10;//5 points for jeep, 10 for tank
 						enemies.remove(i);
 						e = null;
@@ -169,12 +171,13 @@ public class GameApp extends JPanel{
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2d = windScaler.scale(g);
+		cast.draw(g2d);
 		for(Enemy s:enemies) s.draw(g2d);
 		player.draw(g2d);
 		for(Bullet b:shots) b.draw(g2d);
 		g2d.setColor(Color.black);
 		g2d.setFont(gCols.sFont);
-		g2d.drawString(String.format("SCORE: %d eDel: %d",score, enemyDel), 10, 30);
+		g2d.drawString(String.format("SCORE: %d",score, enemyDel), 10, 30);
 		if(menu.inMenu()) menu.draw(g2d);
 	}
 	public static void main(String[] args) {
@@ -185,7 +188,7 @@ public class GameApp extends JPanel{
 		frame.setResizable(false);
 		GameApp app;
 			app = new GameApp();
-			cont.add(app); 
+			cont.add(app);
 			frame.pack(); 
 			frame.setVisible(true);
 			app.player.tStep();
