@@ -1,7 +1,5 @@
 package mainGame;
 
-import java.io.File;
-
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -23,6 +21,7 @@ public class SFX {
 			eHit.open(eHitStream);
 		} catch (Exception e) {
 			System.out.println("Sound error");
+			e.printStackTrace();
 		}
 	}
 	public void hit() {
