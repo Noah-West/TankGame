@@ -18,7 +18,7 @@ public class Jeep implements Enemy{
 	protected final double accConst = 3;
 	protected long fireDel = 600;
 	double[] vel; // vel in form [mag, rad]
-	private static ImageIcon iBody = new ImageIcon(ClassLoader.getSystemResource("eJeep.png"));                
+	private static ImageIcon iBody = new ImageIcon( ClassLoader.getSystemResource("eJeep.png"));                
 	protected int health;
 	protected long lastFire;
 	public Jeep(double x, double y, double rad, boolean start) {

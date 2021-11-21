@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.awt.geom.AffineTransform;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -19,9 +20,9 @@ public class Menu {
 	private boolean arrow = false;
 	private boolean inMenu = false;
 	private ArrayList<Integer> scores = new ArrayList<Integer>(5);
+	private static ImageIcon logo = new ImageIcon(ClassLoader.getSystemResource("Logo.png"));                
 	private File scoresF;
 	public Menu(){
-		//tanks = new ImageIcon("Resource/logo.png"); 
 		inMenu = false;
 		arrow = false;	
 		try{
@@ -89,6 +90,11 @@ public class Menu {
 	public void draw(Graphics2D g2d) {
 		g2d.setColor(new Color(0,0,0,200));
 		g2d.fillRect(40, 40, 720, 520);
+		AffineTransform prev = g2d.getTransform();
+		double scale = .32;
+		g2d.scale(scale, scale);
+		logo.paintIcon(null, g2d, 240, 250);
+		g2d.setTransform(prev);
 		g2d.setFont(gCols.bFont);
 		g2d.setColor(Color.white);
 		g2d.drawString("PLAY", 100, 360);
@@ -103,7 +109,7 @@ public class Menu {
 	private void controls(Graphics2D g2d) {
 		int x = 350, ys = 330, dy = 40;
 		g2d.setFont(gCols.mFont);
-		g2d.setColor(gCols.reload);
+		g2d.setColor(gCols.menuYellow);
 		g2d.drawString("Space - Fire", x+52, ys);
 		g2d.drawString("Left/Right - Rotate tank", x, ys+dy);
 		g2d.drawString("Up/Down - Drive tank", x+12, ys+dy*2);

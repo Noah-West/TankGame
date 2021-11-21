@@ -26,21 +26,70 @@
      units="px"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-bbox="true"
-     inkscape:zoom="4"
-     inkscape:cx="265.375"
-     inkscape:cy="137"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="659.73063"
+     inkscape:cy="270.11479"
      inkscape:window-width="1280"
      inkscape:window-height="745"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="g26717"
      inkscape:object-nodes="false"
      inkscape:object-paths="true"
      inkscape:snap-others="true"
-     inkscape:snap-global="false" />
+     inkscape:snap-global="false"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true" />
   <defs
-     id="defs923" />
+     id="defs923">
+    <rect
+       x="850.94754"
+       y="148.56187"
+       width="111.25772"
+       height="61.570872"
+       id="rect46769" />
+    <rect
+       x="857.17954"
+       y="79.564933"
+       width="92.295322"
+       height="44.556362"
+       id="rect33361" />
+    <rect
+       x="612.11955"
+       y="31.825973"
+       width="410.423"
+       height="46.869444"
+       id="rect31441" />
+    <marker
+       style="overflow:visible"
+       id="DotL"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(7.4, 1)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         id="path5252" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path5191" />
+    </marker>
+  </defs>
   <g
      inkscape:groupmode="layer"
      id="layer2"
@@ -524,6 +573,376 @@
          ry="0.0064822431"
          transform="rotate(-90)" />
     </g>
+    <g
+       id="g26717"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\plrTankBody.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="rotate(43.474573,141.28764,218.04994)">
+      <rect
+         style="display:inline;fill:#937500;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect26667"
+         width="4.8482971"
+         height="21.776928"
+         x="-82.330025"
+         y="22.402164"
+         ry="1.0635411"
+         transform="rotate(-95.933823)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <rect
+         style="display:inline;fill:#937500;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect26669"
+         width="4.8482971"
+         height="21.776934"
+         x="-67.975029"
+         y="22.402164"
+         ry="1.0985382"
+         transform="rotate(-95.933823)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 32.363948,79.459481 31.85357,74.549003"
+         id="path26671"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 34.411317,79.24032 33.902218,74.342146"
+         id="path26673"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 36.459326,79.027306 35.950227,74.129132"
+         id="path26675"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 38.507334,78.814292 37.998236,73.916128"
+         id="path26677"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 40.555342,78.601279 40.046244,73.703115"
+         id="path26679"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 42.603352,78.388275 42.094253,73.490101"
+         id="path26681"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 44.65136,78.175261 44.142261,73.277087"
+         id="path26683"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 46.700008,77.968394 46.190909,73.07023"
+         id="path26685"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 48.748017,77.75539 -0.5091,-4.898174"
+         id="path26687"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 50.796665,77.548523 50.287566,72.650359"
+         id="path26689"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 30.908995,65.173774 30.398617,60.263297"
+         id="path26691"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 32.956365,64.954608 -0.5091,-4.898171"
+         id="path26693"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 35.004373,64.741596 34.495274,59.843425"
+         id="path26695"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 37.052382,64.528584 -0.509099,-4.89817"
+         id="path26697"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 39.10039,64.315572 38.591291,59.417401"
+         id="path26699"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 41.148399,64.102559 40.6393,59.204389"
+         id="path26701"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 43.196407,63.889546 -0.509099,-4.89817"
+         id="path26703"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 45.245056,63.682688 44.735957,58.784517"
+         id="path26705"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 47.293064,63.469675 -0.509099,-4.89817"
+         id="path26707"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 49.341712,63.262816 -0.509099,-4.89817"
+         id="path26709"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <rect
+         style="display:inline;fill:#3477bd;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect26711"
+         width="13.633473"
+         height="17.826706"
+         x="-79.594604"
+         y="24.327782"
+         transform="rotate(-95.933823)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <rect
+         style="display:inline;fill:#3e3e3e;fill-opacity:0.38674;stroke:#000000;stroke-width:0.47625;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect26713"
+         width="13.597801"
+         height="3.2050579"
+         x="-79.568474"
+         y="38.939888"
+         ry="0.014793055"
+         transform="rotate(-95.933823)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <rect
+         style="display:inline;fill:#1a3857;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.385675;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect26715"
+         width="13.729293"
+         height="1.4044406"
+         x="-79.634224"
+         y="24.272366"
+         ry="0.0064822431"
+         transform="rotate(-95.933823)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.23432452,-0.22216811,0.3177566,0.33514334,-160.40914,191.11369)"
+         id="text31439"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect31441);fill:#937500;fill-opacity:1;stroke:#000000;stroke-width:0.947768;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"><tspan
+           x="612.11914"
+           y="69.577037"
+           id="tspan7646">TANKER DEFENCE</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.19200278,-0.18204196,0.18204196,0.19200278,-111.26741,157.02601)"
+         id="text33359"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect33361);fill:#000000;fill-opacity:1;stroke:none" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.19200278,-0.18204196,0.18204196,0.19200278,-111.26741,157.02601)"
+         id="text46767"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect46769);fill:#000000;fill-opacity:1;stroke:none" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="15.276215"
+         y="60.411362"
+         id="text51447"
+         transform="rotate(-43.474573)"><tspan
+           sodipodi:role="line"
+           id="tspan51445"
+           style="stroke-width:0.264583"
+           x="15.276215"
+           y="60.411362" /></text>
+    </g>
+    <g
+       id="g26769"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       transform="rotate(137.7959,127.68724,75.202189)">
+      <rect
+         style="display:inline;fill:#937500;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect26719"
+         width="4.8482971"
+         height="21.776928"
+         x="-53.099758"
+         y="29.776613"
+         ry="1.0635411"
+         transform="rotate(-90)" />
+      <rect
+         style="display:inline;fill:#937500;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect26721"
+         width="4.8482971"
+         height="21.776934"
+         x="-38.744762"
+         y="29.776613"
+         ry="1.0985382"
+         transform="rotate(-90)" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 31.350491,53.149248 v -4.93693"
+         id="path26723" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 33.409547,53.142918 v -4.92456"
+         id="path26725" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 35.468604,53.142768 v -4.92456"
+         id="path26727" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 37.52766,53.142618 v -4.92455"
+         id="path26729" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 39.586716,53.142468 v -4.92455"
+         id="path26731" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 41.645773,53.142328 v -4.92456"
+         id="path26733" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 43.704829,53.142178 v -4.92456"
+         id="path26735" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 45.763886,53.148208 v -4.92455"
+         id="path26737" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 47.822942,53.148068 v -4.92456"
+         id="path26739" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 49.881999,53.154098 v -4.92455"
+         id="path26741" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 31.380186,38.789672 V 33.852743"
+         id="path26743" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 33.439243,38.783337 V 33.85878"
+         id="path26745" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 35.498299,38.783188 V 33.858632"
+         id="path26747" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 37.557356,38.78304 V 33.858484"
+         id="path26749" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 39.616412,38.782892 V 33.858335"
+         id="path26751" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 41.675469,38.782743 V 33.858187"
+         id="path26753" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 43.734525,38.782594 V 33.858038"
+         id="path26755" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 45.793582,38.788633 V 33.864076"
+         id="path26757" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 47.852638,38.788484 V 33.863928"
+         id="path26759" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.47625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 49.911694,38.794522 V 33.869966"
+         id="path26761" />
+      <rect
+         style="display:inline;fill:#9b4834;fill-opacity:1;stroke:#000000;stroke-width:0.47625;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect26763"
+         width="13.633473"
+         height="17.826706"
+         x="-50.364338"
+         y="31.70223"
+         transform="rotate(-90)" />
+      <rect
+         style="display:inline;fill:#ffffff;fill-opacity:0.183007;stroke:#000000;stroke-width:0.47625;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect26765"
+         width="13.597801"
+         height="3.2050579"
+         x="-50.338207"
+         y="46.314335"
+         ry="0.014793055"
+         transform="rotate(-90)" />
+      <rect
+         style="display:inline;fill:#5b443f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.385675;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect26767"
+         width="13.729293"
+         height="1.4044406"
+         x="-50.403957"
+         y="31.646814"
+         ry="0.0064822431"
+         transform="rotate(-90)" />
+    </g>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -815,7 +1234,7 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-       style="fill:#876000;fill-opacity:1;stroke:#000000;stroke-width:0.15875458;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#876000;fill-opacity:1;stroke:#000000;stroke-width:0.158755;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
        id="path1832"
        sodipodi:type="arc"
        sodipodi:cx="-26.955988"
@@ -841,6 +1260,937 @@
        x="70.872932"
        y="25.926153"
        inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Bullet.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="display:inline;fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path26771"
+       sodipodi:type="arc"
+       sodipodi:cx="71.132782"
+       sodipodi:cy="162.729"
+       sodipodi:rx="0.065006182"
+       sodipodi:ry="0.039678439"
+       sodipodi:start="0.012398051"
+       sodipodi:end="3.1395506"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       transform="rotate(-52.45925)"
+       d="m 71.197783,162.7295 a 0.06500618,0.03967844 0 0 1 -0.06534,0.0392 0.06500618,0.03967844 0 0 1 -0.06467,-0.0396"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <ellipse
+       style="display:inline;fill:#384e76;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse26773"
+       cx="71.903984"
+       cy="160.14568"
+       rx="5.2579284"
+       ry="6.1184907"
+       transform="rotate(-52.45925)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#375a8b;fill-opacity:1;stroke:#000000;stroke-width:0.0233861;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 170.40519,45.614764 c -0.21962,-0.341276 -0.24671,-0.389218 -0.40618,-0.718805 -0.39669,-0.819917 -0.57126,-1.654529 -0.52389,-2.504794 0.0265,-0.474657 0.18522,-1.068363 0.41221,-1.541319 0.12955,-0.269987 0.73567,-1.057112 0.94921,-1.231916 0.61822,-0.507976 1.25019,-0.788576 2.04085,-0.906147 0.90776,-0.134987 1.77263,-0.04761 2.74426,0.277208 0.20129,0.06732 0.33444,0.123886 0.35572,0.151193 0.0529,0.06787 0.25525,0.663593 0.33106,0.974638 0.26432,1.084479 0.17983,2.238028 -0.23181,3.168388 -0.74998,1.694644 -2.43403,2.730154 -4.43608,2.727707 -0.39681,-4.81e-4 -0.99034,-0.05851 -1.03955,-0.101634 -0.008,-0.0067 -0.0955,-0.13913 -0.19539,-0.294187 z"
+       id="path26775"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 170.48231,45.987651 c -1.51727,-2.075736 -1.49304,-4.39019 -0.27252,-5.897885"
+       id="path26777"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 175.99755,38.96858 c -2.39129,-0.938371 -4.66634,-0.418705 -5.79531,1.131003"
+       id="path26779"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <ellipse
+       style="fill:#392d21;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse26781"
+       cx="71.988411"
+       cy="162.9976"
+       rx="1.1481529"
+       ry="1.3596176"
+       transform="rotate(-52.45925)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="display:inline;fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26783"
+       width="1.3946972"
+       height="12.838507"
+       x="71.275146"
+       y="163.0816"
+       ry="0"
+       transform="rotate(-52.45925)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path26785"
+       sodipodi:type="arc"
+       sodipodi:cx="71.971672"
+       sodipodi:cy="-163.21739"
+       sodipodi:rx="0.69799709"
+       sodipodi:ry="0.40696248"
+       sodipodi:start="6.274737"
+       sodipodi:end="3.1395506"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       transform="matrix(0.60932552,-0.79292018,-0.79292018,-0.60932552,0,0)"
+       d="m 72.669644,-163.22083 a 0.69799709,0.40696248 0 0 1 -0.345164,0.35459 0.69799709,0.40696248 0 0 1 -0.699278,0.002 0.69799709,0.40696248 0 0 1 -0.351526,-0.35245"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g26801"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Logo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       transform="rotate(137.7959,127.68724,75.202189)">
+      <ellipse
+         style="display:inline;fill:#753c32;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse26787"
+         cx="-43.547604"
+         cy="40.615585"
+         rx="5.2579284"
+         ry="6.1184907"
+         transform="rotate(-90)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:#ff3c3c;fill-opacity:0.168627;stroke:#000000;stroke-width:0.0233861;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 43.381863,47.788236 c -0.38209,-0.136785 -0.43278,-0.158294 -0.76005,-0.322467 -0.81414,-0.408414 -1.46111,-0.963827 -1.94164,-1.666877 -0.26826,-0.392477 -0.50412,-0.959996 -0.61231,-1.473324 -0.0618,-0.292997 -0.0608,-1.286457 0.002,-1.555174 0.18068,-0.779493 0.5108,-1.387054 1.06609,-1.962046 0.63754,-0.660159 1.37655,-1.117876 2.3449,-1.45235 0.20062,-0.0693 0.34067,-0.105555 0.37418,-0.09687 0.0833,0.02157 0.60673,0.370661 0.85637,0.571101 0.8704,0.698839 1.50636,1.664927 1.74677,2.653525 0.43792,1.800688 -0.26644,3.647908 -1.85539,4.865864 -0.31493,0.241399 -0.82091,0.557042 -0.88621,0.552835 -0.0102,-6.61e-4 -0.16054,-0.05205 -0.33418,-0.114213 z"
+         id="path26789"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 43.670233,48.036912 c -2.46788,-0.721384 -3.85892,-2.571327 -3.80983,-4.510495"
+         id="path26791"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="display:inline;fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 43.766473,39.110767 c -2.46788,0.713029 -3.95516,2.511319 -3.90607,4.428025"
+         id="path26793"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <ellipse
+         style="fill:#392d21;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse26795"
+         cx="-43.463177"
+         cy="43.467514"
+         rx="1.1481529"
+         ry="1.3596176"
+         transform="rotate(-90)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="display:inline;fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect26797"
+         width="1.3946972"
+         height="12.838507"
+         x="-44.176449"
+         y="43.551491"
+         ry="0"
+         transform="rotate(-90)"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:#737373;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path26799"
+         sodipodi:type="arc"
+         sodipodi:cx="-43.479912"
+         sodipodi:cy="-43.695576"
+         sodipodi:rx="0.69799709"
+         sodipodi:ry="0.40696248"
+         sodipodi:start="6.274737"
+         sodipodi:end="3.1395506"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         transform="matrix(0,-1,-1,0,0,0)"
+         d="m -42.78194,-43.699014 a 0.69799709,0.40696248 0 0 1 -0.345164,0.354587 0.69799709,0.40696248 0 0 1 -0.699278,0.0021 0.69799709,0.40696248 0 0 1 -0.351525,-0.352456"
+         inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\eTankBody.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Castle"
+     style="display:inline">
+    <rect
+       style="fill:#503722;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect13254"
+       width="40.569046"
+       height="3.0617993"
+       x="101.8265"
+       y="166.93721"
+       ry="0.067290761"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;fill:#7a6e5c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.24545;stroke-dasharray:none"
+       id="rect3580"
+       width="71.32756"
+       height="14.481713"
+       x="86.447243"
+       y="170.26462"
+       ry="0.21734224"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;fill:#7a6e5c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.24545;stroke-dasharray:none"
+       id="rect1065"
+       width="186.68942"
+       height="44.337795"
+       x="28.766312"
+       y="184.31836"
+       ry="0.21734221"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-opacity:1"
+       d="m 122.11102,166.90765 v 3.50125"
+       id="path15097"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#503722;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect15179"
+       width="40.569046"
+       height="3.0617993"
+       x="-142.39555"
+       y="166.93721"
+       ry="0.067290761"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="display:inline;fill:#7a6e5c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.24545;stroke-dasharray:none"
+       id="circle15185"
+       cx="-215.8002"
+       cy="183.97389"
+       r="15.932712"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="display:inline;fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.24545;stroke-dasharray:none"
+       id="circle15187"
+       cx="-157.7748"
+       cy="170.6353"
+       r="7.5221372"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15189"
+       width="5.0579662"
+       height="7.0400834"
+       x="-217.98471"
+       y="221.75821"
+       ry="0.19479863"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15191"
+       width="5.0579662"
+       height="7.0400834"
+       x="-217.98471"
+       y="210.41251"
+       ry="0.19479863"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#7a6e5c;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect23566"
+       width="17.168171"
+       height="16.076553"
+       x="198.47597"
+       y="185.27731"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15193"
+       width="5.0206637"
+       height="7.7746711"
+       x="-217.96606"
+       y="199.0098"
+       ry="0.21512464"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.793863;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15195"
+       width="5.1070638"
+       height="10.495739"
+       x="-272.95862"
+       y="-124.25492"
+       ry="0.29041642"
+       transform="matrix(-0.41283568,-0.91080552,-0.92039812,0.39098249,0,0)"
+       inkscape:transform-center-x="-8.1288216"
+       inkscape:transform-center-y="-3.2055315"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15197"
+       width="5.0579662"
+       height="7.0400834"
+       x="-286.49387"
+       y="90.079384"
+       ry="0.19479863"
+       transform="matrix(-0.93074272,-0.3656747,-0.3656747,0.93074272,0,0)"
+       inkscape:transform-center-x="0.031041942"
+       inkscape:transform-center-y="-0.27162081"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15199"
+       width="5.0579662"
+       height="7.0400834"
+       x="-218.98413"
+       y="195.10608"
+       ry="0.19479863"
+       transform="matrix(-0.99680793,0.07983704,0.07983704,0.99680793,0,0)"
+       inkscape:transform-center-x="0.14709244"
+       inkscape:transform-center-y="-0.23044479"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15201"
+       width="5.0579662"
+       height="7.0400834"
+       x="-27.989967"
+       y="279.18073"
+       ry="0.19479863"
+       transform="matrix(-0.67254855,0.74005301,0.74005301,0.67254855,0,0)"
+       inkscape:transform-center-x="0.26491258"
+       inkscape:transform-center-y="-0.067498254"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15203"
+       width="5.0579662"
+       height="7.0400834"
+       x="168.61345"
+       y="209.68663"
+       ry="0.19479863"
+       transform="matrix(0.01762963,0.99984459,0.99984459,-0.01762963,0,0)"
+       inkscape:transform-center-x="0.23916387"
+       inkscape:transform-center-y="0.13245706"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15205"
+       width="5.0579662"
+       height="7.0400834"
+       x="258.9003"
+       y="52.704067"
+       ry="0.19479863"
+       transform="matrix(0.61706046,0.78691574,0.78691574,-0.61706046,0,0)"
+       inkscape:transform-center-x="0.11093192"
+       inkscape:transform-center-y="0.24988136"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15207"
+       width="4.9620719"
+       height="10.216533"
+       x="-185.93433"
+       y="-203.85435"
+       ry="0.28269079"
+       transform="matrix(0.00166576,-0.99999861,-0.99999971,-7.6126196e-4,0,0)"
+       inkscape:transform-center-x="-0.35064769"
+       inkscape:transform-center-y="-0.12550786"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15209"
+       width="5.0579662"
+       height="7.0400834"
+       x="198.70197"
+       y="-184.18678"
+       ry="0.19479863"
+       transform="matrix(0.99999937,0.00112609,0.00112609,-0.99999937,0,0)"
+       inkscape:transform-center-x="-0.12791788"
+       inkscape:transform-center-y="0.24162207"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#2d2922;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="ellipse15211"
+       cx="-215.27103"
+       cy="184.23848"
+       rx="8.5288954"
+       ry="8.1322031"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15213"
+       width="5.0579662"
+       height="7.0400834"
+       x="-185.92276"
+       y="-190.614"
+       ry="0.19479863"
+       transform="matrix(0.00112609,-0.99999937,-0.99999937,-0.00112609,0,0)"
+       inkscape:transform-center-x="-0.24163221"
+       inkscape:transform-center-y="-0.12792463"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15215"
+       width="5.0579662"
+       height="7.0400834"
+       x="-185.93404"
+       y="-180.60475"
+       ry="0.19479863"
+       transform="matrix(0.00112609,-0.99999937,-0.99999937,-0.00112609,0,0)"
+       inkscape:transform-center-x="-0.24162454"
+       inkscape:transform-center-y="-0.12792468"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15217"
+       width="5.0579662"
+       height="7.0400834"
+       x="-185.94521"
+       y="-170.68906"
+       ry="0.19479863"
+       transform="matrix(0.00112609,-0.99999937,-0.99999937,-0.00112609,0,0)"
+       inkscape:transform-center-x="-0.2416245"
+       inkscape:transform-center-y="-0.12792471"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect15219"
+       width="5.0579662"
+       height="7.0400834"
+       x="-185.95584"
+       y="-161.24109"
+       ry="0.19479863"
+       transform="matrix(0.00112609,-0.99999937,-0.99999937,-0.00112609,0,0)"
+       inkscape:transform-center-x="-0.24163209"
+       inkscape:transform-center-y="-0.12792474"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#2d2922;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="ellipse15467"
+       cx="-157.77481"
+       cy="170.6353"
+       rx="3.5285258"
+       ry="3.3644085"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect23590"
+       width="5.6565647"
+       height="3.9199002"
+       x="197.49811"
+       y="181.54437"
+       ry="0.30592629"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect23590-7"
+       width="3.8320966"
+       height="5.5513959"
+       x="213.72484"
+       y="199.4175"
+       ry="0.4332554"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect25485"
+       width="3.8320966"
+       height="5.5513959"
+       x="273.63202"
+       y="-111.39902"
+       ry="0.4332554"
+       transform="rotate(64.482909)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#503722;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect25685"
+       width="40.569046"
+       height="3.0617993"
+       x="-142.39554"
+       y="166.93721"
+       ry="0.067290761"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-opacity:1"
+       d="m 122.11103,166.90765 v 3.50125"
+       id="path25691"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#503722;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect25693"
+       width="40.569046"
+       height="3.0617993"
+       x="101.82649"
+       y="166.93721"
+       ry="0.067290761"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="display:inline;fill:#7a6e5c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.24545;stroke-dasharray:none"
+       id="circle25695"
+       cx="28.421856"
+       cy="183.97389"
+       r="15.932712"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="display:inline;fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.24545;stroke-dasharray:none"
+       id="circle25697"
+       cx="86.447258"
+       cy="170.6353"
+       r="7.5221372"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25699"
+       width="5.0579662"
+       height="7.0400834"
+       x="26.237347"
+       y="221.75821"
+       ry="0.19479863"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25701"
+       width="5.0579662"
+       height="7.0400834"
+       x="26.237347"
+       y="210.41251"
+       ry="0.19479863"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#7a6e5c;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect25703"
+       width="17.168171"
+       height="16.076553"
+       x="-45.746086"
+       y="185.27731"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#2d2922;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect15571"
+       width="170.36226"
+       height="35.875217"
+       x="36.929893"
+       y="192.7276"
+       ry="0"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25705"
+       width="5.0206637"
+       height="7.7746711"
+       x="26.255993"
+       y="199.0098"
+       ry="0.21512464"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.793863;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25707"
+       width="5.1070638"
+       height="10.495739"
+       x="-177.44487"
+       y="98.247246"
+       ry="0.29041642"
+       transform="matrix(0.41283568,-0.91080552,0.92039812,0.39098249,0,0)"
+       inkscape:transform-center-x="8.1288243"
+       inkscape:transform-center-y="-3.2055255"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25709"
+       width="5.0579662"
+       height="7.0400834"
+       x="-59.185966"
+       y="179.38521"
+       ry="0.19479863"
+       transform="rotate(-21.449111)"
+       inkscape:transform-center-x="-0.031040803"
+       inkscape:transform-center-y="-0.2716221"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25711"
+       width="5.0579662"
+       height="7.0400834"
+       x="24.458349"
+       y="175.60812"
+       ry="0.19479863"
+       transform="rotate(4.5791988)"
+       inkscape:transform-center-x="-0.14709143"
+       inkscape:transform-center-y="-0.23044136"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25713"
+       width="5.0579662"
+       height="7.0400834"
+       x="136.26122"
+       y="98.443466"
+       ry="0.19479863"
+       transform="rotate(47.735931)"
+       inkscape:transform-center-x="-0.26491106"
+       inkscape:transform-center-y="-0.067497103"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25715"
+       width="5.0579662"
+       height="7.0400834"
+       x="164.30791"
+       y="-34.497467"
+       ry="0.19479863"
+       transform="rotate(91.010156)"
+       inkscape:transform-center-x="-0.23916141"
+       inkscape:transform-center-y="0.13245867"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25717"
+       width="5.0579662"
+       height="7.0400834"
+       x="108.20054"
+       y="-139.4781"
+       ry="0.19479863"
+       transform="rotate(128.10179)"
+       inkscape:transform-center-x="-0.11092898"
+       inkscape:transform-center-y="0.24988231"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25719"
+       width="4.9620719"
+       height="10.216533"
+       x="-186.12025"
+       y="40.367462"
+       ry="0.28269079"
+       transform="matrix(-0.00166576,-0.99999861,0.99999971,-7.6126196e-4,0,0)"
+       inkscape:transform-center-x="0.35064826"
+       inkscape:transform-center-y="-0.1255053"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25721"
+       width="5.0579662"
+       height="7.0400834"
+       x="-45.519932"
+       y="-184.46181"
+       ry="0.19479863"
+       transform="rotate(179.93548)"
+       inkscape:transform-center-x="0.12792114"
+       inkscape:transform-center-y="0.24161884"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#2d2922;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="ellipse25723"
+       cx="28.951031"
+       cy="184.23848"
+       rx="8.5288954"
+       ry="8.1322031"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25725"
+       width="5.0579662"
+       height="7.0400834"
+       x="-186.19778"
+       y="53.607899"
+       ry="0.19479863"
+       transform="rotate(-90.06452)"
+       inkscape:transform-center-x="0.24163554"
+       inkscape:transform-center-y="-0.12792782"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25727"
+       width="5.0579662"
+       height="7.0400834"
+       x="-186.20906"
+       y="63.617146"
+       ry="0.19479863"
+       transform="rotate(-90.06452)"
+       inkscape:transform-center-x="0.24162791"
+       inkscape:transform-center-y="-0.12792783"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25729"
+       width="5.0579662"
+       height="7.0400834"
+       x="-186.22023"
+       y="73.532845"
+       ry="0.19479863"
+       transform="rotate(-90.06452)"
+       inkscape:transform-center-x="0.24162791"
+       inkscape:transform-center-y="-0.12792782"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect25731"
+       width="5.0579662"
+       height="7.0400834"
+       x="-186.23087"
+       y="82.980812"
+       ry="0.19479863"
+       transform="rotate(-90.06452)"
+       inkscape:transform-center-x="0.24163554"
+       inkscape:transform-center-y="-0.12792781"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:#2d2922;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="ellipse25733"
+       cx="86.447243"
+       cy="170.6353"
+       rx="3.5285258"
+       ry="3.3644085"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect25737"
+       width="5.6565647"
+       height="3.9199002"
+       x="-46.723946"
+       y="181.54437"
+       ry="0.30592629"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect25739"
+       width="3.8320966"
+       height="5.5513959"
+       x="-30.497219"
+       y="199.4175"
+       ry="0.4332554"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:none;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:13.12;stroke-opacity:1"
+       id="rect25741"
+       width="3.8320966"
+       height="5.5513959"
+       x="168.42598"
+       y="109.00084"
+       ry="0.4332554"
+       transform="matrix(-0.43078031,0.90245683,0.90245683,0.43078031,0,0)"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect26067"
+       width="5.0579667"
+       height="7.6979961"
+       x="-186.2326"
+       y="92.409691"
+       ry="0.21300304"
+       transform="matrix(-0.00123132,-0.99999924,0.99999947,-0.00102984,0,0)"
+       inkscape:transform-center-x="0.26422"
+       inkscape:transform-center-y="-0.12793146"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect26071"
+       width="5.0579667"
+       height="7.6979961"
+       x="-186.24324"
+       y="102.74059"
+       ry="0.21300304"
+       transform="matrix(-0.00123132,-0.99999924,0.99999947,-0.00102984,0,0)"
+       inkscape:transform-center-x="0.26422085"
+       inkscape:transform-center-y="-0.12793141"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect26075"
+       width="5.0579667"
+       height="7.6979961"
+       x="-186.25388"
+       y="113.07149"
+       ry="0.21300304"
+       transform="matrix(-0.00123132,-0.99999924,0.99999947,-0.00102984,0,0)"
+       inkscape:transform-center-x="0.26422099"
+       inkscape:transform-center-y="-0.12793137"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect26079"
+       width="5.0579667"
+       height="7.6979961"
+       x="-186.26451"
+       y="123.40239"
+       ry="0.21300304"
+       transform="matrix(-0.00123132,-0.99999924,0.99999947,-0.00102984,0,0)"
+       inkscape:transform-center-x="0.2642135"
+       inkscape:transform-center-y="-0.12793133"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect26083"
+       width="5.0579667"
+       height="7.6979961"
+       x="-186.27515"
+       y="133.73328"
+       ry="0.21300304"
+       transform="matrix(-0.00123132,-0.99999924,0.99999947,-0.00102984,0,0)"
+       inkscape:transform-center-x="0.26422127"
+       inkscape:transform-center-y="-0.12793127"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#807f7c;fill-opacity:1;stroke:#000000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:1.24545;stroke-dasharray:none;stroke-dashoffset:3.47133;stroke-opacity:1"
+       id="rect26087"
+       width="5.0579667"
+       height="7.6979961"
+       x="-186.28578"
+       y="144.06418"
+       ry="0.21300304"
+       transform="matrix(-0.00123132,-0.99999924,0.99999947,-0.00102984,0,0)"
+       inkscape:transform-center-x="0.26422212"
+       inkscape:transform-center-y="-0.12793122"
+       inkscape:export-filename="C:\Users\Noah\Documents\Eclipse\TankGame\Resource\Castle.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
   </g>

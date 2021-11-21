@@ -17,7 +17,7 @@ public class GameApp extends JPanel{
 	protected KeyListen keyb = new KeyListen();
 	private FScale windScaler;
 	private Menu menu;
-	private SFX sfx;
+	//private SFX sfx;
 	protected int score;
 	private Tank player;
 	private Castle cast;
@@ -26,14 +26,14 @@ public class GameApp extends JPanel{
 	
 	
 	public GameApp() {
-		sfx = new SFX();
+		//sfx = new SFX();
 		menu = new Menu();
-		cast = new Castle(400, 500);
+		cast = new Castle(400, 520);
 		setBackground(gCols.bg); 
 		windScaler = new FScale(this, 800, 600);
 		addKeyListener(keyb);
 		setFocusable(true);
-		player = new Tank(400, 500, 0, -Math.PI/2, 200, false);
+		player = new Tank(400, 420, 0, -Math.PI/2, 200, false);
 		nextEnemy = System.currentTimeMillis()-2000;
 	}
 	public void play() {
@@ -102,14 +102,20 @@ public class GameApp extends JPanel{
 				b = null;
 			}
 		}
-	//handling player hits
+	//handling player/castle hits
 		Area collide = player.tightBounds();
+		Area cCollide = cast.tightBounds();
 		for(int j = 0; j < shots.size();j++) {
 			Bullet shot = shots.get(j);
 			if(collide.contains(shot.tip())) {				
-				sfx.hit();
+				//sfx.hit();
 				shots.remove(j);
 				if(player.takeDamage(shot.damage()))return 1;
+				shot = null;
+			}else if(cCollide.contains(shot.tip())) {				
+				//sfx.hit();
+				shots.remove(j);
+				if(cast.takeDamage(shot.damage()))return 1;
 				shot = null;
 			}
 		}
@@ -120,7 +126,7 @@ public class GameApp extends JPanel{
 			for(int j = 0; j < shots.size();j++) {//loop though shots, on each enemy
 				Bullet shot = shots.get(j);
 				if(collide.contains(shot.tip())&&shot.type()==0) {//if shot hit the enemy
-					sfx.eHit();
+					//sfx.eHit();
 					if(e.takeDamage(shot.damage())) {//if enemy dies
 						score += (e instanceof Jeep)?5:10;//5 points for jeep, 10 for tank
 						enemies.remove(i);
