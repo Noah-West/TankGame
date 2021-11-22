@@ -188,7 +188,7 @@ public class GameApp extends JPanel{
 	}
 	public static void main(String[] args) {
 		while(true) {
-		JFrame frame = new JFrame("SpaceDefender");
+		JFrame frame = new JFrame("Tanker Defence");
 		Container cont = frame.getContentPane();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
