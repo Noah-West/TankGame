@@ -20,6 +20,7 @@ public class KeyListen implements KeyListener{
 			keyCount = 0;
 			for(boolean key:keys)
 				keyCount += key?1:0;
+			//System.out.println(keyCount);
 		}
 	}
 	public int lastKey() {

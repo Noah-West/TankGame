@@ -11,28 +11,49 @@ import java.util.Random;
 import java.awt.geom.Area;
 
 public class GameApp extends JPanel{
-	private final double rotRate = (Math.PI/30)/5;
-	protected final long invFps = 1000/60;
-	
+	public static final int fps = 30;
+	private final double rotRate = ((Math.PI/2)/fps)/2;
+	public static final long invFps = 1000/fps;
 	protected KeyListen keyb = new KeyListen();
 	private FScale windScaler;
 	private Menu menu;
 	//private SFX sfx;
 	protected int score;
+	private Area bounds;
 	private Tank player;
 	private Castle cast;
 	private ArrayList<Enemy> enemies = new ArrayList<Enemy>();
 	private ArrayList<Bullet> shots = new ArrayList<Bullet>();
+	//for enemy generation
+	private long nextEnemy;
+	private int enemyDel = 2500;
+	private double tankProb = 0;
+	private double genEnemyX;
+	private static Random rnd = new Random(System.currentTimeMillis());
 	
 	
 	public GameApp() {
-		//sfx = new SFX();
+		setBackground(gCols.bg); 
+		windScaler = new FScale(this, 800, 600);
+		setFocusable(true);
+		addKeyListener(keyb);
+		refresh();
+	}
+	public void refresh() {
+		enemyDel = 2500;
+		tankProb = 0;
+		genEnemyX = 0;
+		
+		enemies = new ArrayList<Enemy>();
+		shots = new ArrayList<Bullet>();
 		menu = new Menu();
 		cast = new Castle(400, 520);
 		setBackground(gCols.bg); 
-		windScaler = new FScale(this, 800, 600);
-		addKeyListener(keyb);
-		setFocusable(true);
+		System.out.println(isFocusable());
+		bounds = new Area(new Rectangle(-10,-10,820,620));
+		bounds.subtract(new Area(new Rectangle(0,0,800,600)));
+		bounds.add(cast.tightBounds());
+		
 		player = new Tank(400, 420, 0, -Math.PI/2, 200, false);
 		nextEnemy = System.currentTimeMillis()-2000;
 	}
@@ -73,21 +94,21 @@ public class GameApp extends JPanel{
 
 	}
 	public int updatePhysics() {
-		
 		player.tStep();
 		genEnemies();
 		for(Enemy e:enemies) {
 			e.tStep(shots, player);
 		}
+		Area eBounds = new Area();
+		for(Enemy e:enemies)eBounds.add(e.tightBounds());
+		Area plrBounds = player.tightBounds();
+		eBounds.add(bounds);
+		plrBounds.intersect(eBounds);
+		if(!plrBounds.isEmpty()) {
+			player.resolveCollide(eBounds);
+		}
 	//keeping player on screen
-		Rectangle box = player.rectBounds();
-		double[] pos = player.pos();
-		if(box.getX()<0||box.getX()+box.getWidth()>800)
-			player.collide();
-		if(box.getY()<0||box.getY()+box.getHeight()>600)
-			player.collide();
-		if(player.takeDamage(0))return 1;
-		player.pos(pos);
+		
 	//stepping/deleting shots
 		long t = System.currentTimeMillis();
 		Bullet b;
@@ -139,11 +160,7 @@ public class GameApp extends JPanel{
 		}
 		return 0;
 	}
-	private long nextEnemy;
-	private int enemyDel = 2500;
-	private double tankProb = 0;
-	private double genEnemyX;
-	private static Random rnd = new Random(System.currentTimeMillis());
+	
 	/**
 	 * generate new enemies based on a set of changing probabilities
 	 */
@@ -175,29 +192,32 @@ public class GameApp extends JPanel{
 		super.paintComponent(g);
 		Graphics2D g2d = windScaler.scale(g);
 		cast.draw(g2d);
+		g2d.setColor(Color.red);
 		for(Enemy s:enemies) s.draw(g2d);
 		player.draw(g2d);
 		for(Bullet b:shots) b.draw(g2d);
 		g2d.setColor(Color.black);
 		g2d.setFont(gCols.sFont);
-		g2d.drawString(String.format("SCORE: %d",score, enemyDel), 10, 30);
+		g2d.drawString(String.format("SCORE: %d",score, player.pBody.vel()[0], player.pos()[0], player.pos()[1]), 10, 30);
 		if(menu.inMenu()) menu.draw(g2d);
 	}
 	public static void main(String[] args) {
-		while(true) {
 		JFrame frame = new JFrame("SpaceDefender");
-		Container cont = frame.getContentPane();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setUndecorated(true);
+		Container cont = frame.getContentPane();
 		GameApp app;
-			app = new GameApp();
-			cont.add(app);
-			frame.setUndecorated(true);
-			frame.pack(); 
-			frame.setVisible(true);
+		app = new GameApp();
+		cont.add(app);
+		frame.pack(); 
+		frame.setVisible(true);
+		while(true) {
 			app.player.tStep();
 			app.menu.main(app);
 			app.play();
 			app.menu.highScore(app);
+			app.keyb.waitForNotKey();
+			app.refresh();
 		}
 	}
 }

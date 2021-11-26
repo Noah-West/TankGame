@@ -22,13 +22,11 @@ public class PObj {
 		this.rVel = 0;
 		this.scale = scale;
 		trans = new AffineTransform();
-		trans.setToTranslation(pos[0], pos[1]);
+		transUpdate();
 		if(start)start();
 	}
 	public void start() {
-		trans.setToTranslation(pos[0], pos[1]);
-		trans.scale(scale, scale);
-		trans.rotate(rPos);
+		transUpdate();
 		lastTime = System.currentTimeMillis();
 	}
 	public void tStep() {
@@ -37,9 +35,7 @@ public class PObj {
 		pos[0] += vel[0]*tdiff*Math.cos(vel[1]);
 		pos[1] += vel[0]*tdiff*Math.sin(vel[1]);
 		rPos += rVel;
-		trans.setToTranslation(pos[0], pos[1]);
-		trans.scale(scale, scale);
-		trans.rotate(rPos);
+		transUpdate();
 		lastTime = time;
 	}
 	public static double[] toXY(double mag, double rad){
@@ -53,6 +49,11 @@ public class PObj {
 		out[0] = Math.sqrt(in[0]*in[0]+in[1]*in[1]);
 		out[1] = Math.atan2(in[1],in[0]);
 		return out;
+	}
+	private void transUpdate() {
+		trans.setToTranslation(pos[0], pos[1]);
+		trans.scale(scale, scale);
+		trans.rotate(rPos);
 	}
 	/**
 	 * @return the pos
@@ -82,7 +83,8 @@ public class PObj {
 	 * @param pos the pos to set
 	 */
 	public void pos(double[] pos) {
-		this.pos = pos;
+		this.pos = pos.clone();
+		transUpdate();
 	}
 	/**
 	 * @param vel the vel to set
@@ -95,12 +97,14 @@ public class PObj {
 	 */
 	public void rPos(double rPos) {
 		this.rPos = rPos;
+		transUpdate();
 	}
 	/**
 	 * @param rVel the rVel to set
 	 */
 	public void rVel(double rVel) {
 		this.rVel = rVel;
+		
 	}
 	/**
 	 * @return the trans
@@ -125,6 +129,7 @@ public class PObj {
 	 */
 	public void scale(double scale) {
 		this.scale = scale;
+		transUpdate();
 	}
 	
 }
