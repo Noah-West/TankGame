@@ -48,8 +48,7 @@ public class GameApp extends JPanel{
 		shots = new ArrayList<Bullet>();
 		menu = new Menu();
 		cast = new Castle(400, 520);
-		setBackground(gCols.bg); 
-		System.out.println(isFocusable());
+		setBackground(gCols.bg);
 		bounds = new Area(new Rectangle(-10,-10,820,620));
 		bounds.subtract(new Area(new Rectangle(0,0,800,600)));
 		bounds.add(cast.tightBounds());
