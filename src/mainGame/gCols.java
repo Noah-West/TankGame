@@ -12,4 +12,5 @@ public class gCols {
 	public static final Color reload = new Color(0xbcb41c);
 	public static final Color plrBlue = new Color(0x3477bd);
 	public static final Color menuYellow = new Color(0x937500);
+	public static final Color brighten = new Color(0xFFFFFF88);
 }
