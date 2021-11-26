@@ -100,8 +100,8 @@ public class GameApp extends JPanel{
 		}
 		Area eBounds = new Area();
 		for(Enemy e:enemies)eBounds.add(e.tightBounds());
-		Area plrBounds = player.tightBounds();
 		eBounds.add(bounds);
+		Area plrBounds = player.tightBounds();
 		plrBounds.intersect(eBounds);
 		if(!plrBounds.isEmpty()) {
 			player.resolveCollide(eBounds);

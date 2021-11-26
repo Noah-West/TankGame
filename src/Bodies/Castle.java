@@ -10,6 +10,8 @@ import java.awt.geom.Rectangle2D;
 
 import javax.swing.ImageIcon;
 
+import mainGame.gCols;
+
 public class Castle {
 	private AffineTransform prev, tran;
 	private double[] pos;
@@ -18,6 +20,7 @@ public class Castle {
 	private int health = 500;
 	private double scale = .6;
 	private int w, h;
+	private int hitCD;
 	public Castle(double x, double y) {
 		pos = new double[] {x, y};
 		w = iBody.getIconWidth();
@@ -49,10 +52,15 @@ public class Castle {
 		g2d.setColor(Color.red);
 		g2d.fillRect((int)-100, 20, (int)(health/2.5), 15);
 		g2d.drawRect((int)-100, 20, (int)(500/2.5), 15);
-
 		g2d.setTransform(prev);
+		if(hitCD>0) {
+			g2d.setColor(gCols.brighten1);
+			g2d.fill(tightBounds());
+			hitCD --;
+		}
 	}
 	public boolean takeDamage(int damage) {
+		hitCD = damage/5+1;
 		health -= damage;
 		return health <= 0;
 	}
