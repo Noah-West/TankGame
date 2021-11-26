@@ -5,6 +5,8 @@ import mainGame.GameApp;
 import mainGame.gCols;
 
 import java.awt.Graphics2D;
+import java.awt.Color;
+
 import java.awt.Rectangle;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Area;
@@ -25,9 +27,11 @@ public class Tank {
 	private static ImageIcon iTurret = new ImageIcon(ClassLoader.getSystemResource("plrTankTurret.png"));  
 	protected int health;
 	protected long lastFire;
+	private int hitCD;
 	public Tank(double x, double y, double mag, double rad, int health, boolean start) {
 		this.health = health;
 		          
+		hitCD = 0;
 		pos = new double[] {x, y};
 		vel = new double[] {mag, rad};
 		pBody = new PObj(pos, vel, start);
@@ -77,10 +81,16 @@ public class Tank {
 		g2d.transform(pTurret.trans());
 		iTurret.paintIcon(null, g2d, -23,-20);
 		g2d.setTransform(prev);
+		if(hitCD>0) {
+			g2d.setColor(gCols.brighten2);
+			g2d.fill(tightBounds());
+			hitCD --;
+		}
 	}
 	public boolean takeDamage(int damage) {
+		hitCD = damage/5+1;
 		health -= damage;
-		return health < 0;
+		return health <= 0;
 	}
 	public void tStep() {
 		addVel(accRate-.01*accConst*vel[0]);

@@ -24,6 +24,7 @@ public class ETank implements Enemy{
 	protected int health;
 	protected long lastFire;
 	private boolean tPlr;
+	private int hitCD;
 	public ETank(double x, double y, double rad, boolean start) {
 		this.health = 30;
 		pos = new double[] {x, y};
@@ -63,8 +64,15 @@ public class ETank implements Enemy{
 		g2d.transform(pTurret.trans());
 		iTurret.paintIcon(null, g2d, -23,-20);
 		g2d.setTransform(prev);
+		g2d.setTransform(prev);
+		if(hitCD>0) {
+			g2d.setColor(gCols.brighten2);
+			g2d.fill(tightBounds());
+			hitCD --;
+		}
 	}
 	public boolean takeDamage(int damage) {
+		hitCD = 2;
 		health -= damage;
 		return health <= 0;
 	}
