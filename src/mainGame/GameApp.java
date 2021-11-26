@@ -41,8 +41,7 @@ public class GameApp extends JPanel{
 	//game setup
 		score = 0;
 		Random rnd = new Random();
-		player.start();
-		for(Enemy s:enemies)s.start();
+		restart();
 		while(true) {
 			loopTime = System.currentTimeMillis()+invFps;
 			
@@ -67,7 +66,14 @@ public class GameApp extends JPanel{
 			while(System.currentTimeMillis()<loopTime);
 		}
 	}
+	public void restart() {
+		player.start();
+		for(Enemy s:enemies)s.start();
+		for(Bullet b:shots)b.start();
+
+	}
 	public int updatePhysics() {
+		
 		player.tStep();
 		genEnemies();
 		for(Enemy e:enemies) {
@@ -76,20 +82,11 @@ public class GameApp extends JPanel{
 	//keeping player on screen
 		Rectangle box = player.rectBounds();
 		double[] pos = player.pos();
-		if(box.getX()<0) {
-			pos[0] += 10;
-			player.takeDamage(3);
-		} else if(box.getX()+box.getWidth()>800) {
-			pos[0] -= 10;
-			player.takeDamage(3);
-		}
-		if(box.getY()<0) {
-			pos[1] += 10;
-			player.takeDamage(3);
-		} else if(box.getY()+box.getHeight()>600) {
-			pos[1] -= 10;
-			player.takeDamage(3);
-		}
+		if(box.getX()<0||box.getX()+box.getWidth()>800)
+			player.collide();
+		if(box.getY()<0||box.getY()+box.getHeight()>600)
+			player.collide();
+		if(player.takeDamage(0))return 1;
 		player.pos(pos);
 	//stepping/deleting shots
 		long t = System.currentTimeMillis();
@@ -191,10 +188,10 @@ public class GameApp extends JPanel{
 		JFrame frame = new JFrame("SpaceDefender");
 		Container cont = frame.getContentPane();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setResizable(false);
 		GameApp app;
 			app = new GameApp();
 			cont.add(app);
+			frame.setUndecorated(true);
 			frame.pack(); 
 			frame.setVisible(true);
 			app.player.tStep();

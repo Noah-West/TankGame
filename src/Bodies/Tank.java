@@ -19,6 +19,7 @@ public class Tank {
 	protected final double accConst = 3;
 	protected long fireDel = 400;
 	double[] pos, vel; // vel in form [mag, rad]
+	protected int lastDir = 0;
 	private static ImageIcon iBody = new ImageIcon(ClassLoader.getSystemResource("plrTankBody.png"));                
 	private static ImageIcon iTurret = new ImageIcon(ClassLoader.getSystemResource("plrTankTurret.png"));  
 	protected int health;
@@ -105,6 +106,15 @@ public class Tank {
 		pBody.pos(pos);
 		pTurret.pos(pos);
 	}
+	public void collide() {
+		vel[0] = -vel[0];
+//		if((vel[0]>0&&lastDir==-1)||(vel[0]<0&&lastDir==1))return;//do not stop if trying to reverse out of collision
+//		else lastDir = vel[0]>0?1:-1; //direction collision occured on
+//		vel[0] = 0;
+//		pBody.vel(vel);
+//		pTurret.vel(vel);
+		//takeDamage(3);
+	}
 	/**
 	 * @return the pos
 	 */
@@ -117,4 +127,5 @@ public class Tank {
 	public double[] vel() {
 		return vel;
 	}
+
 }

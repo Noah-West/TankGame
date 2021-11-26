@@ -13,6 +13,8 @@ import java.util.Scanner;
 
 import javax.swing.Timer;
 
+import Bodies.Enemy;
+
 import javax.swing.ImageIcon;
 
 public class Menu {
@@ -34,7 +36,7 @@ public class Menu {
 			Scanner sScan = new Scanner(scoresF);
 			for(int i = 0; i <5; i++){
 				scores.add(sScan.nextInt());
-				System.out.println(scores.get(i));
+				//System.out.println(scores.get(i));
 			}
 		}catch(FileNotFoundException e) {
 			System.out.println("Scores Error");
@@ -55,6 +57,7 @@ public class Menu {
 	public void main(GameApp app) {
 		inMenu = true;
 		app.repaint();
+		app.keyb.waitForNotKey();
 		while(true) {
 			app.keyb.waitForKey();
 			switch(app.keyb.lastKey()) {
@@ -70,6 +73,7 @@ public class Menu {
 			case KeyEvent.VK_ENTER:
 				if(arrow) {
 					inMenu = false;
+					app.restart();
 					return;
 				}else System.exit(0);
 			}
