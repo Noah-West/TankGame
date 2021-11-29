@@ -11,7 +11,7 @@ public class Bullet {
 	private final static int[] speed 	= new int[] {400, 400, 250};
 	private final static int[] time 	= new int[] {1500, 1000, 1000};
 	private final static double[] scale = new double[] {.4, .2, .4};
-	private final static int[] damage 	= new int[] {10, 3, 10};
+	private final static int[] damage 	= new int[] {10, 3, 7};
 	
 	static ImageIcon Ibody = new ImageIcon(ClassLoader.getSystemResource("bullet.png"));
 	private AffineTransform prev;

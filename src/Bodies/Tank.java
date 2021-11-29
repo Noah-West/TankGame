@@ -1,31 +1,37 @@
 package Bodies;
-
 import javax.swing.ImageIcon;
 
+import mainGame.GameApp;
 import mainGame.gCols;
 
 import java.awt.Graphics2D;
-import java.awt.Rectangle;
 import java.awt.Color;
+
+import java.awt.Rectangle;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Area;
-import java.awt.geom.Point2D;
 import java.util.ArrayList;
+
 public class Tank {
+	private final double accConst = 1000d/GameApp.fps;
+	private double accRate = 0;
 	protected AffineTransform prev;
 	protected Area bounds, tranBounds;
-	protected PObj pBody, pTurret;
-	protected final double maxVel = 80;
-	protected final double accConst = 3;
+	public PObj pBody;
+	//protected final double maxVel = 90;
+	protected PObj pTurret;
+	
 	protected long fireDel = 400;
 	double[] pos, vel; // vel in form [mag, rad]
 	private static ImageIcon iBody = new ImageIcon(ClassLoader.getSystemResource("plrTankBody.png"));                
 	private static ImageIcon iTurret = new ImageIcon(ClassLoader.getSystemResource("plrTankTurret.png"));  
 	protected int health;
 	protected long lastFire;
+	private int hitCD;
 	public Tank(double x, double y, double mag, double rad, int health, boolean start) {
 		this.health = health;
 		          
+		hitCD = 0;
 		pos = new double[] {x, y};
 		vel = new double[] {mag, rad};
 		pBody = new PObj(pos, vel, start);
@@ -55,15 +61,11 @@ public class Tank {
 	}
 	public void addVel(double mag) {
 		vel[0] += mag;
-		vel[0] = vel[0] >= maxVel ? maxVel : vel[0];
-		vel[0] = vel[0] <= -maxVel ? -maxVel : vel[0];
+		//vel[0] = Math.max(-maxVel, Math.min(vel[0], maxVel));
 		pBody.vel(vel);
 		pTurret.vel(vel);
 	}
-	public void acc(boolean dir) {
-		if(dir) addVel(3*accConst);
-		else addVel(-3*accConst);
-	}
+	
 	public void draw(Graphics2D g2d) {
 		prev = g2d.getTransform();
 	//health bar
@@ -79,31 +81,75 @@ public class Tank {
 		g2d.transform(pTurret.trans());
 		iTurret.paintIcon(null, g2d, -23,-20);
 		g2d.setTransform(prev);
+		if(hitCD>0) {
+			g2d.setColor(gCols.brighten2);
+			g2d.fill(tightBounds());
+			hitCD --;
+		}
 	}
 	public boolean takeDamage(int damage) {
+		hitCD = damage/5+1;
 		health -= damage;
-		return health < 0;
+		return health <= 0;
 	}
 	public void tStep() {
-		addVel(vel[0]>0?-2*accConst:(vel[0]<0?2*accConst:0));
+		addVel(accRate-.01*accConst*vel[0]);
 		pBody.tStep();
 		pTurret.tStep();
+		pos = pBody.pos();
 		tranBounds = bounds.createTransformedArea(pBody.trans());
+		accRate = 0;
 	}
 	public void start() {
 		pBody.start();
 		pTurret.start();
 	}
 	public Area tightBounds() {
-		return tranBounds;
+		return (Area)tranBounds.clone();
 	}
 	public Rectangle rectBounds() {
 		return tranBounds.getBounds();
 	}
-	public void pos(double[] pos) {
-		this.pos = pos;
-		pBody.pos(pos);
-		pTurret.pos(pos);
+	
+	public void resolveCollide(Area colliding) {
+		double xStep, yStep;
+		double[] lPos = pos();
+		double[] sPos = lPos.clone();
+		if(vel[0]>0) {//move backwards to resolve
+			xStep = -2*Math.cos(vel[1]);
+			yStep = -2*Math.sin(vel[1]);
+		}else {//move forwards to resolve
+			xStep = 2*Math.cos(vel[1]);
+			yStep = 2*Math.sin(vel[1]);
+		}
+		for(int i = 0; i < 15; i++) {
+			lPos[0] += xStep;
+			lPos[1] += yStep;
+			pos(lPos);
+			tranBounds = bounds.createTransformedArea(pBody.trans());
+			colliding.intersect(tranBounds);
+			if(colliding.isEmpty())return;
+		}
+		lPos = sPos.clone();
+		xStep = -xStep;
+		yStep = -yStep;
+		for(int i = 0; i < 15; i++) {
+			lPos[0] += xStep;
+			lPos[1] += yStep;
+			pos(lPos);
+			tranBounds = bounds.createTransformedArea(pBody.trans());
+			colliding.intersect(tranBounds);
+			if(colliding.isEmpty())return;
+		}
+		lPos = sPos;
+		pos(lPos);
+		tranBounds = bounds.createTransformedArea(pBody.trans());
+	}
+	
+	public void pos(double[] posIn) {
+		this.pos = posIn;
+		pBody.pos(posIn);
+		pTurret.pos(posIn);
 	}
 	/**
 	 * @return the pos
@@ -117,4 +163,10 @@ public class Tank {
 	public double[] vel() {
 		return vel;
 	}
+
+	public void acc(boolean b) {
+		accRate = b?accConst:-accConst;
+	}
+
+
 }

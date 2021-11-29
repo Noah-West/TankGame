@@ -1,0 +1,3 @@
+[submodule "FScale"]
+	path = src/FScale
+	url = https://github.com/noah-west/java-fscale.git

@@ -14,6 +14,15 @@ public class KeyListen implements KeyListener{
 		while(keyPress == false);
 		if(DEBUG)System.out.println("end waitkey");
 	}
+	public void waitForNotKey() {
+		int keyCount = 1;
+		while(keyCount > 0) {
+			keyCount = 0;
+			for(boolean key:keys)
+				keyCount += key?1:0;
+			//System.out.println(keyCount);
+		}
+	}
 	public int lastKey() {
 		return lastKey;
 	}
